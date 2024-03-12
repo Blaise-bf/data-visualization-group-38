@@ -1,0 +1,263 @@
+---
+title: Data visualization DEAD Data set
+format: 
+  pdf
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(ggpubr)
+library(tidyverse)
+library(janitor)
+library(data.table)
+library(skimr)
+library(stringi)
+
+```
+
+### 
+
+```{r}
+# Base theme settings
+#| echo: false
+#| message: false
+#| warning: false
+theme_set(theme_minimal(base_family = "Spline Sans"))
+theme_update(
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  axis.line.x = element_line(color = "grey80", linewidth = .4),
+  axis.ticks.x = element_line(color = "grey80", linewidth = .4),
+  axis.title.y = element_blank(),
+  plot.margin = margin(10, 15, 10, 15)
+)
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+customers <- fread("data/customers.csv") |> clean_names()
+orders <- fread("data/orders.csv") |> clean_names() 
+products <- fread("data/products.csv") |> clean_names() 
+regions <- fread("data/regions.csv") |> clean_names()
+```
+
+## Exploratory Visualizations: Data visualization in Data Science Course
+
+**Group:** 38
+
+**Data:** DEAD data set
+
+## About the Dumbledilp’s Equipment & Adventuring Distributions (DEAD) Data set
+
+This company has four data sets of type table holding data on their customers, on the orders, products and regions. In total there are `r formatC((nrow(customers)), big.mark =",")` customers and `r formatC(nrow(orders), big.mark = ",")` orders during the 5-year period similarly, there are `r length(unique(regions$territory))` territories.
+
+```{r}
+#| eval: false
+#| echo: false
+orders
+```
+
+```{r}
+#| eval: false
+#| echo: false
+df_products <- orders |> separate_rows(products, sep = ", ") 
+df_price <- orders |> separate_rows(product_prices_in_cp, sep = ", ")
+```
+
+```{r}
+#| echo: false
+df_join <- orders |> 
+  select(!territory) |> 
+  separate_wider_delim(cart_price, delim =  "; ", names = c("gold", "silver", "copper")) |> 
+  mutate(gold = parse_number(gold),
+         silver = parse_number(silver),
+         copper = parse_number(copper)) |> 
+  inner_join(customers |> 
+               rename(customer_id = account_code), by = 'customer_id') |> 
+  inner_join(regions, by = "territory")
+  
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| label: fig-cust
+#| fig-cap: Customer account details
+#| fig-subcap: 
+#|  - "Account type"
+#|  - "Account name"
+#| layout-ncol: 2
+#| fig-height: 4.5
+customers |>
+  mutate(key_account = key_account |> fct_infreq() |> fct_rev()) |>
+  ggplot(aes(x = key_account)) +
+  geom_bar() +
+  coord_flip() +
+  labs(
+    x = NULL,
+    y = "Frequency"
+  ) 
+
+df_join |> 
+  mutate(account_type = stri_trans_totitle(account_type, type = "sentence") |> fct_infreq() |> fct_rev() ) |> 
+  ggplot(aes(x = account_type)) +
+  labs(
+    x = NULL,
+    y = "Frequency"
+  ) +
+  geom_bar() + 
+  coord_flip()
+
+
+```
+
+The account type and account names are all categorical nominal variables. There are three levels of account type, with No key account being the most common. Further, there are `r length(unique(customers$account_type))`levels of account type
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-cap: Distribution of delivery delay and cart price by year
+#| label: fig-cont
+#| fig-subcap: 
+#|  - "Delivery delay"
+#|  - "Cart price"
+#| layout-ncol: 2
+#| fig-height: 4.5
+orders |> 
+  mutate(yea_transact = factor(year(order_date)),
+         m_transact = month(order_date),
+         delay = delivery_date - order_date) |> 
+  ggplot(aes(x= delay)) +
+  geom_histogram(bins = 10) +
+  labs(x = "Delivery delay (days)") +
+  facet_wrap(~yea_transact) 
+orders |> 
+  mutate(yea_transact = factor(year(order_date))) |> 
+  ggplot(aes(x= cart_price_in_cp)) +
+  geom_histogram(bins = 15) +
+  facet_wrap(~yea_transact) +
+  labs(x = "Cart price in copper")
+```
+
+There distribution of cart price @fig-cont-1 and delivery delay @fig-cont-2 are fairly similar across the five years of transactions. There are few cases where the deliver delay was more than 100 days.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: fig-month
+#| fig-cap: Monthly evolution of cart price and delays
+#| fig-subcap: 
+#|  - "Monthly cart price"
+#|  - "Monthly delivery delay"
+#| layout-ncol: 2
+#| fig-height: 4
+df_join |> 
+  mutate(
+    monthly_date =  floor_date(   # make new column, week of onset
+    order_date,
+    unit = "month")) |> 
+  
+  summarize(
+    cart_price = median(cart_price_in_cp),
+    .by = c(monthly_date, area)
+  ) |> 
+  ggplot(
+    aes(monthly_date, cart_price)
+  ) + geom_line() +
+  facet_wrap(~area)
+
+
+
+df_join |> 
+  mutate(
+    
+    delay = lubridate::date(delivery_date) - lubridate::date(order_date),
+    monthly_date =  floor_date(   # make new column, week of onset
+    order_date,
+    unit = "month")) |> 
+  
+  summarize(
+    delay = median(delay),
+    .by = c(monthly_date, area)
+  ) |> 
+  ggplot(
+    aes(monthly_date, delay)
+  ) + geom_line() +
+  facet_wrap(~area)
+  
+```
+
+The order and delivery date variable, from which the delivery delay was computed. The evolution of of median cart prices per month is comparable across the different regions but for the Underdark region which shows more of an erratic behavior. Although all regions observed a peak in median delivery delay time around the end of 2021, this is more marked in the Underdark and West regions (@fig-month-2)
+
+```{r}
+#| echo: false
+#| label: fig-products
+#| layout: [[45, -6, 45], [47 , -6, 47]]
+#| fig-height: 5
+#| fig-cap: Product details
+#| fig-subcap: 
+#|  - "product type"
+#|  - "product subtype"
+#|  - "brand names"
+#|  - "business line leaders"
+products |> 
+  mutate(type = stri_trans_totitle(type, type = "sentence") |> fct_infreq() |> fct_rev()) |> 
+  ggplot(aes(x = type)) +
+  geom_bar() +
+  coord_flip() +
+  labs(
+    x = NULL,
+    y = "Frequency"
+  ) 
+
+# product subtype
+products |> 
+  mutate(
+    subtype = subtype |> str_to_lower() |> fct_infreq() |> fct_rev()
+  ) |> 
+  
+  ggplot(aes(x = subtype)) +
+  geom_bar() +
+  coord_flip() +
+  labs(
+    x = NULL,
+    y = "Frequency"
+  ) 
+# Brand names
+products |> 
+  mutate(
+    brand_name = brand_name  |> fct_infreq() |> fct_rev()
+  ) |> 
+  
+  ggplot(aes(x = brand_name)) +
+  geom_bar() +
+  coord_flip() +
+  labs(
+    x = NULL,
+    y = "Frequency"
+  ) +
+  theme_minimal()
+# Products business line leaders
+products |> 
+  mutate(
+    products_business_line_leader = products_business_line_leader  |> fct_infreq() |> fct_rev()
+  ) |> 
+  
+  ggplot(aes(x = products_business_line_leader)) +
+  geom_bar() +
+  coord_flip() +
+  labs(
+    x = NULL,
+    y = "Frequency"
+  ) 
+```
+
+The product type, sub type are all categorical nominal variables @fig-products-1 and @fig-products-2 shows their respective distribution. The popularity of four out of the 6 brand names is fairly similar, contrary to Arcantic and Mythal which are not very popular brand names (@fig-products-3). Bubles are the most common business line leaders @fig-products-4
