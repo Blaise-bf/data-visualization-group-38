@@ -21,11 +21,10 @@ library(stringi)
 ### 
 
 ```{r}
-# Base theme settings
 #| echo: false
 #| message: false
 #| warning: false
-theme_set(theme_minimal(base_family = "Spline Sans"))
+theme_set(theme_minimal())
 theme_update(
   panel.grid.minor = element_blank(),
   panel.grid.major = element_blank(),
@@ -65,21 +64,44 @@ orders
 ```{r}
 #| eval: false
 #| echo: false
-df_products <- orders |> separate_rows(products, sep = ", ") 
-df_price <- orders |> separate_rows(product_prices_in_cp, sep = ", ")
+df_orders_wide <- orders |> 
+  # Check of products and quantities match
+  mutate(prod_len = str_count(products, ";"),
+         quant_len = str_count(quantities, ","), .before = 1) |> 
+  # Use only matching rows with equal length of products and quantity
+  filter(prod_len == quant_len) |> 
+  # Replace delimiter to ensure easy unpacking of data
+  mutate(quantities = str_replace_all(quantities, ",", ";"),
+         product_code = str_replace_all(products_i_ds, ",", ";"), .before = 1) |> 
+  # separate_longer_delim(cols = quantities, delim = ",") |> 
+  # Unpack product id, products, quantity
+  separate_longer_delim(cols = c(products, quantities, product_id), delim = ";") |> 
+  # Create a column for the prices of the different monetary units
+  separate_wider_delim(cart_price, delim = ";", names = c("price_gold", "price_silver", "price_copper"))
 ```
 
 ```{r}
 #| echo: false
-df_join <- orders |> 
+df_join <- df_orders_wide |> 
   select(!territory) |> 
-  separate_wider_delim(cart_price, delim =  "; ", names = c("gold", "silver", "copper")) |> 
-  mutate(gold = parse_number(gold),
-         silver = parse_number(silver),
-         copper = parse_number(copper)) |> 
+  # separate_wider_delim(cart_price, delim =  "; ", names = c("gold", "silver", "copper")) |> 
+  mutate(gold = parse_number(price_gold),
+         silver = parse_number(price_silver),
+         copper = parse_number(price_copper)) |> 
+  # Join orders to customer table
   inner_join(customers |> 
-               rename(customer_id = account_code), by = 'customer_id') |> 
-  inner_join(regions, by = "territory")
+               rename(customer_id = account_code), join_by(customer_id)) |> 
+  # Join regions to customer/oder data 
+  inner_join(regions, join_by(territory)) |>
+  # Join products to the rest of the dataset
+  inner_join(products, join_by(product_code)) |> 
+  
+  mutate(
+    
+    delay = lubridate::date(delivery_date) - lubridate::date(order_date),
+    monthly_date =  floor_date(   # make new column, week of onset
+    order_date,
+    unit = "month"))
   
 ```
 

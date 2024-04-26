@@ -50,9 +50,4 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
-
-# Matteo's file
-.DS_store
-Data Visualisation Project Report.docx
-report_template_v20240323.docx
-venv/
+df_dead.csv
