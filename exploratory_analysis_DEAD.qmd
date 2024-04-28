@@ -75,7 +75,7 @@ df_orders_wide <- orders |>
          product_code = str_replace_all(products_i_ds, ",", ";"), .before = 1) |> 
   # separate_longer_delim(cols = quantities, delim = ",") |> 
   # Unpack product id, products, quantity
-  separate_longer_delim(cols = c(products, quantities, product_id), delim = ";") |> 
+  separate_longer_delim(cols = c(products, quantities, product_code), delim = ";") |> 
   # Create a column for the prices of the different monetary units
   separate_wider_delim(cart_price, delim = ";", names = c("price_gold", "price_silver", "price_copper"))
 ```
@@ -93,8 +93,9 @@ df_join <- df_orders_wide |>
                rename(customer_id = account_code), join_by(customer_id)) |> 
   # Join regions to customer/oder data 
   inner_join(regions, join_by(territory)) |>
+  mutate(product_code = as.integer(product_code)) |> 
   # Join products to the rest of the dataset
-  inner_join(products, join_by(product_code)) |> 
+  inner_join(products , join_by(product_code)) |> 
   
   mutate(
     
@@ -103,6 +104,10 @@ df_join <- df_orders_wide |>
     order_date,
     unit = "month"))
   
+```
+
+```{r}
+df_join
 ```
 
 ```{r}
@@ -283,3 +288,7 @@ products |>
 ```
 
 The product type, sub type are all categorical nominal variables @fig-products-1 and @fig-products-2 shows their respective distribution. The popularity of four out of the 6 brand names is fairly similar, contrary to Arcantic and Mythal which are not very popular brand names (@fig-products-3). Bubles are the most common business line leaders @fig-products-4
+
+```{r}
+# write_csv(df_join, "data/df_dead.csv")
+```
