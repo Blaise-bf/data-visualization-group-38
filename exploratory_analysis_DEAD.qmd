@@ -1,7 +1,7 @@
 ---
 title: Data visualization DEAD Data set
-format: 
-  pdf
+format:
+  typst
 ---
 
 ```{r}
@@ -15,6 +15,7 @@ library(janitor)
 library(data.table)
 library(skimr)
 library(stringi)
+library(jsonlite)
 
 ```
 
@@ -38,6 +39,7 @@ theme_update(
 ```{r}
 #| echo: false
 #| message: false
+
 #| warning: false
 customers <- fread("data/customers.csv") |> clean_names()
 orders <- fread("data/orders.csv") |> clean_names() 
@@ -56,13 +58,6 @@ regions <- fread("data/regions.csv") |> clean_names()
 This company has four data sets of type table holding data on their customers, on the orders, products and regions. In total there are `r formatC((nrow(customers)), big.mark =",")` customers and `r formatC(nrow(orders), big.mark = ",")` orders during the 5-year period similarly, there are `r length(unique(regions$territory))` territories.
 
 ```{r}
-#| eval: false
-#| echo: false
-orders
-```
-
-```{r}
-#| eval: false
 #| echo: false
 df_orders_wide <- orders |> 
   # Check of products and quantities match
@@ -102,12 +97,15 @@ df_join <- df_orders_wide |>
     delay = lubridate::date(delivery_date) - lubridate::date(order_date),
     monthly_date =  floor_date(   # make new column, week of onset
     order_date,
-    unit = "month"))
+    unit = "month")) |> 
+  mutate(
+    year = lubridate::year(order_date),
+    week = lubridate::week(order_date),
+    month = lubridate::month(order_date),
+    month_name = lubridate::month(order_date, label = TRUE)
+  ) |> 
+  mutate(across(where(is.character), str_to_sentence))
   
-```
-
-```{r}
-df_join
 ```
 
 ```{r}
@@ -291,4 +289,147 @@ The product type, sub type are all categorical nominal variables @fig-products-1
 
 ```{r}
 # write_csv(df_join, "data/df_dead.csv")
+```
+
+```{r}
+df_chart1 <- df_join |> 
+  select(type, order_date, area, revenue = cart_price_in_cp,business_unit, quantity = quantities) |> 
+  mutate(
+    year = lubridate::year(order_date),
+    week = lubridate::week(order_date),
+    month = lubridate::month(order_date),
+    quantity = as.integer(quantity)
+  ) |> 
+  mutate(across(where(is.character), str_to_sentence))
+  
+```
+
+```{r}
+revenue_by_type <- df_chart1 %>%
+  group_by(business_unit, week, year, type) %>%
+  summarize(
+    revenue = sum(revenue, na.rm = TRUE),
+    type_avg_revenue = mean(revenue, na.rm = TRUE),
+    total_type_quantity = sum(quantity, na.rm = TRUE), .groups = "drop"
+  ) 
+
+
+
+```
+
+```{r}
+revenue_by_week <- df_chart1 |> 
+  group_by(business_unit, year, week) |> 
+  summarize(total_weekly_revenue = sum(revenue, na.rm = TRUE),
+            avg_revenue_weekly = mean(revenue, na.rm = TRUE),
+            .groups = "drop")
+```
+
+```{r}
+yearly_revenue <- revenue_by_type |> 
+  
+  summarize(total = sum(revenue), .by = c(year, business_unit))
+
+```
+
+```{r}
+df_ch1 <- revenue_by_type |> 
+  left_join(revenue_by_week, join_by(business_unit, year, week)) |> 
+  mutate(percentage = (revenue/total_weekly_revenue) * 100) |> 
+  # mutate(across(where(is.character), str_to_sentence)) |> 
+  arrange(week, business_unit) |> 
+  left_join(yearly_revenue, join_by(year, business_unit))
+```
+
+```{r}
+yearly_revenue <- df_ch1 |> 
+  
+  summarize(total = sum(revenue), .by = c(year, business_unit))
+
+
+```
+
+### Get monthly summaries
+
+```{r}
+revenue_by_type <- df_chart1 %>%
+  group_by(business_unit, month, year, type) %>%
+  summarize(
+    revenue = sum(revenue, na.rm = TRUE),
+    type_avg_revenue = mean(revenue, na.rm = TRUE),
+    total_type_quantity = sum(quantity, na.rm = TRUE), .groups = "drop"
+  ) 
+```
+
+```{r}
+revenue_by_month <- df_chart1 |> 
+  group_by(business_unit, year, month) |> 
+  summarize(total_monthly_revenue = sum(revenue, na.rm = TRUE),
+            avg_revenue_monthly = mean(revenue, na.rm = TRUE),
+            .groups = "drop")
+```
+
+```{r}
+df_month <- revenue_by_type |> 
+  left_join(revenue_by_month, join_by(business_unit, year, month)) |> 
+  mutate(percentage = (revenue/total_monthly_revenue) * 100) |> 
+  # mutate(across(where(is.character), str_to_sentence)) |> 
+  # arrange(week, business_unit) |> 
+  left_join(yearly_revenue, join_by(year, business_unit))
+```
+
+```{r}
+df_month
+```
+
+```{r}
+json_data_week <- toJSON(df_ch1, pretty = TRUE)
+write(json_data_week, "weekly_revenue.json")
+```
+
+```{r}
+json_data_month <-  toJSON(df_month, pretty = TRUE)
+write(json_data_month, "monthly_revenue.json")
+```
+
+```{r}
+regional_revenues <- df_join |> 
+  select(type, order_date, region, revenue = cart_price_in_cp,account_name, account_type, delay) |> 
+  mutate(
+    year = lubridate::year(order_date),
+    week = lubridate::week(order_date),
+    month = lubridate::month(order_date)
+  ) |> 
+
+  group_by(region, account_type, year, month) |> 
+  summarize(revenue = sum(revenue), .groups = "drop") |> 
+  filter(year == 2023)
+  
+```
+
+```{r}
+regional_revenues
+```
+
+```{r}
+json_regional_revenue <- toJSON(regional_revenues, pretty = TRUE)
+write(json_regional_revenue, "regional_revenue.json")
+```
+
+```{r}
+df_delays <- df_join |> 
+  group_by(year, brand_name, month_name) |> 
+  summarize(delay = parse_number(as.character(round(mean(delay, na.rm = TRUE)))), .groups = "drop") |> 
+  filter(year == 2020) |> 
+  rename(type = brand_name)
+  
+df_delays
+```
+
+```{r}
+write(toJSON(df_delays, pretty = TRUE), "delays.json")
+```
+
+```{r}
+products
 ```
