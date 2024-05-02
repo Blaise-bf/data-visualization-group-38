@@ -2,6 +2,8 @@
 title: Data visualization DEAD Data set
 format:
   typst
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -41,10 +43,10 @@ theme_update(
 #| message: false
 
 #| warning: false
-customers <- fread("data/customers.csv") |> clean_names()
-orders <- fread("data/orders.csv") |> clean_names() 
-products <- fread("data/products.csv") |> clean_names() 
-regions <- fread("data/regions.csv") |> clean_names()
+customers <- read_csv("data/customers.csv") |> clean_names()
+orders <- read_csv("data/orders.csv") |> clean_names() 
+products <- read_csv("data/products.csv") |> clean_names() 
+regions <- read_csv("data/regions.csv") |> clean_names()
 ```
 
 ## Exploratory Visualizations: Data visualization in Data Science Course
@@ -94,7 +96,7 @@ df_join <- df_orders_wide |>
   
   mutate(
     
-    delay = lubridate::date(delivery_date) - lubridate::date(order_date),
+    delay = delivery_date - order_date,
     monthly_date =  floor_date(   # make new column, week of onset
     order_date,
     unit = "month")) |> 
@@ -312,8 +314,67 @@ revenue_by_type <- df_chart1 %>%
     type_avg_revenue = mean(revenue, na.rm = TRUE),
     total_type_quantity = sum(quantity, na.rm = TRUE), .groups = "drop"
   ) 
+  
 
 
+
+```
+
+```{r}
+proportion_revenue_week_area <- df_chart1 %>%
+  group_by(business_unit, year, week, type, area) %>%
+  summarise(total_revenue_by_type = sum(revenue), .groups = 'drop') %>%
+  group_by(business_unit, year, week, area) %>%
+  mutate(total_revenue_per_week = sum(total_revenue_by_type)) %>%
+  ungroup() %>%
+  mutate(proportion = total_revenue_by_type / total_revenue_per_week * 100) |> 
+  rename(revenue = total_revenue_by_type)
+
+proportion_revenue_week <- df_chart1 %>%
+  group_by(business_unit, year, week, type) %>%
+  summarise(total_revenue_by_type = sum(revenue), .groups = 'drop') %>%
+  group_by(business_unit, year, week) %>%
+  mutate(total_revenue_per_week = sum(total_revenue_by_type)) %>%
+  ungroup() %>%
+  mutate(proportion = total_revenue_by_type / total_revenue_per_week * 100) |> 
+  rename(revenue = total_revenue_by_type) |> 
+  mutate(area = "Overall")
+
+
+all_revenue_week <- bind_rows(proportion_revenue_week, proportion_revenue_week_area)
+  write(toJSON(all_revenue_week, pretty = TRUE), "trend_weekly.json")
+```
+
+```{r}
+proportion_revenue_month_area <- df_chart1 %>%
+  group_by(business_unit, year, month, type, area) %>%
+  summarise(total_revenue_by_type = sum(revenue), .groups = 'drop') %>%
+  group_by(business_unit, year, month, area) %>%
+  mutate(total_revenue_per_month = sum(total_revenue_by_type)) %>%
+  ungroup() %>%
+  mutate(proportion = total_revenue_by_type / total_revenue_per_month) |> 
+  rename(revenue = total_revenue_by_type)
+
+proportion_revenue_month <- df_chart1 %>%
+  group_by(business_unit, year, month, type) %>%
+  summarise(total_revenue_by_type = sum(revenue), .groups = 'drop') %>%
+  group_by(business_unit, year, month) %>%
+  mutate(total_revenue_per_month = sum(total_revenue_by_type * 100)) %>%
+  ungroup() %>%
+  mutate(proportion = total_revenue_by_type / total_revenue_per_month * 100) |> 
+  rename(revenue = total_revenue_by_type) |> 
+  mutate(area = "Overall")
+
+
+all_revenue_month <- bind_rows(proportion_revenue_month, proportion_revenue_month_area)
+write(toJSON(all_revenue_month, pretty = TRUE), "trend_monthly.json")
+```
+
+```{r}
+
+```
+
+```{r}
 
 ```
 
@@ -353,7 +414,7 @@ yearly_revenue <- df_ch1 |>
 
 ```{r}
 revenue_by_type <- df_chart1 %>%
-  group_by(business_unit, month, year, type) %>%
+  group_by(business_unit, month, year, type, area) %>%
   summarize(
     revenue = sum(revenue, na.rm = TRUE),
     type_avg_revenue = mean(revenue, na.rm = TRUE),
@@ -363,7 +424,7 @@ revenue_by_type <- df_chart1 %>%
 
 ```{r}
 revenue_by_month <- df_chart1 |> 
-  group_by(business_unit, year, month) |> 
+  group_by(business_unit, year, month, area) |> 
   summarize(total_monthly_revenue = sum(revenue, na.rm = TRUE),
             avg_revenue_monthly = mean(revenue, na.rm = TRUE),
             .groups = "drop")
@@ -371,11 +432,11 @@ revenue_by_month <- df_chart1 |>
 
 ```{r}
 df_month <- revenue_by_type |> 
-  left_join(revenue_by_month, join_by(business_unit, year, month)) |> 
-  mutate(percentage = (revenue/total_monthly_revenue) * 100) |> 
-  # mutate(across(where(is.character), str_to_sentence)) |> 
-  # arrange(week, business_unit) |> 
-  left_join(yearly_revenue, join_by(year, business_unit))
+  left_join(revenue_by_month, join_by(business_unit, year, month, area)) |> 
+  mutate(percentage = (revenue/total_monthly_revenue) * 100) 
+  # # mutate(across(where(is.character), str_to_sentence)) |> 
+  # # arrange(week, business_unit) |> 
+  # left_join(yearly_revenue, join_by(year, business_unit))
 ```
 
 ```{r}
@@ -389,7 +450,7 @@ write(json_data_week, "weekly_revenue.json")
 
 ```{r}
 json_data_month <-  toJSON(df_month, pretty = TRUE)
-write(json_data_month, "monthly_revenue.json")
+write(json_data_month, "trend_month.json")
 ```
 
 ```{r}
@@ -418,10 +479,10 @@ write(json_regional_revenue, "regional_revenue.json")
 
 ```{r}
 df_delays <- df_join |> 
-  group_by(year, brand_name, month_name) |> 
-  summarize(delay = parse_number(as.character(round(mean(delay, na.rm = TRUE)))), .groups = "drop") |> 
-  filter(year == 2020) |> 
-  rename(type = brand_name)
+  group_by(year, type, month_name) |> 
+  summarize(delay = parse_number(as.character(round(mean(delay, na.rm = TRUE)))), .groups = "drop") 
+  # filter(year == 2020) |> 
+  # rename(type = brand_name)
   
 df_delays
 ```
@@ -431,5 +492,7 @@ write(toJSON(df_delays, pretty = TRUE), "delays.json")
 ```
 
 ```{r}
-products
+df_join |> 
+  group_by(year, type)
+
 ```
