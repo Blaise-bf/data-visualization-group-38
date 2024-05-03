@@ -28,6 +28,9 @@ function loadData() {
     });
 }
 
+// Update the chart when the toggle between abasolute and relative value changes
+propotionSelector.addEventListener('change', loadData)
+
 // Update the chart when the data frequency changes
 dataFrequencySelector.addEventListener('change', loadData);
 regionSelector.addEventListener("input", loadData);
@@ -615,36 +618,58 @@ function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRad
     });
 
 
+    svg.selectAll("path")
+        .data(data)
+        .enter().append("path")
+        .attr("fill", d => color(d.type))
+        .attr("d", arc)
+        .on("mouseover", (event, d) => showDonutChart(d, color))
+        .on("mouseout", hideDonutChart);
+
+    function showDonutChart(d, color) {
+        const donutData = d.proportion; // Ensure 'details' is structured for pie layout
+        drawDonutChart(donutData, color);
+    }
+
+    function hideDonutChart() {
+        d3.select("#donut").html(""); // Clear the donut chart
+    }
+
+
     
 }
 
-function drawDonutChart(data) {
-    // Define width, height, radius
-    const width = 200, height = 200;
-    const radius = Math.min(width, height) / 2;
+function drawDonutChart(data, color) {
+    const width = 200, height = 200, radius = Math.min(width, height) / 2;
 
-    // Remove any existing SVG first (if you are reusing the tooltip div)
-    d3.select(".tooltip svg").remove();
-
-    const svg = d3.select(".tooltip").append("svg")
+    const svg = d3.select("#donut").append("svg")
         .attr("width", width)
         .attr("height", height)
         .append("g")
         .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
     const arc = d3.arc()
-        .innerRadius(radius * 0.5) // Adjust to get donut thickness
-        .outerRadius(radius);
+        .outerRadius(radius - 10)
+        .innerRadius(radius - 70);
 
     const pie = d3.pie()
-        .sort(null) // if you don't want to sort the data
+        .sort(null)
         .value(d => d.value);
 
-    const path = svg.selectAll("path")
+    const g = svg.selectAll(".arc")
         .data(pie(data))
-        .enter().append("path")
-        .attr("d", arc)
-        .attr("fill", (d, i) => d3.schemeCategory10[i % 10]); // Color scheme
+        .enter().append("g")
+        .attr("class", "arc");
 
-    // Optionally add text or other markers
+    g.append("path")
+        .attr("d", arc)
+        .style("fill", d => color(d.data.type));
+
+    g.append("text")
+        .attr("transform", d => `translate(${arc.centroid(d)})`)
+        .attr("dy", ".35em")
+        .text(d => d.data.type);
 }
+
+// Add an SVG element to the body or specific div for the donut chart
+d3.select("body").append("div").attr("id", "donut");

@@ -20,9 +20,9 @@ function arcDiagram(data) {
     const orders = calculateOrders(source, target)
 
     // Specify the chart’s dimensions.
-  const width = 700;
-  const step = 16;
-  const marginTop = 20;
+  const width = 800;
+  const step = 25;
+  const marginTop = 25;
   const marginRight = 20;
   const marginBottom = 20;
   const marginLeft = 210;
@@ -48,7 +48,7 @@ function arcDiagram(data) {
   const svg = container.append("svg")
     .attr("width", width)  // The width of the SVG in pixels
     .attr("height", height)  // The height of the SVG in pixels
-    .attr("viewBox", [0, 0, width - 20, height + 550])  // Adjust these values to change zoom level
+    .attr("viewBox", [0, 0, width , height + 30])  // Adjust these values to change zoom level
     .attr("style", "max-width: 100%; height: auto;"); // Added border for clarity
 
 
@@ -115,7 +115,7 @@ function arcDiagram(data) {
       });
 
       const legend = svg.append("g")
-      .attr("transform", `translate(${width - marginRight - 150}, ${marginTop})`);
+      .attr("transform", `translate(${width - marginRight - 95}, ${marginTop})`);
 
     source.map(d => d.group)
       .filter((value, index, self) => self.indexOf(value) === index) // Unique values
@@ -132,10 +132,10 @@ function arcDiagram(data) {
         legendRow.append("text")
           .attr("x", 28)
           .attr("y", 9)
-          .attr("dy", "0.35em")
+          .attr("dy", "0.45em")
           .text(group)
           .style("font-family", "Cursive")
-          .style("font-size", "12px");
+          .style("font-size", "14px");
 
 
           // Add styles for the hover interaction.
