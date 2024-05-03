@@ -1,0 +1,3614 @@
+[
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 15041092
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 11537146
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 12902142
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 12647232
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 13057011
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 13862813
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 11303128
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 14020824
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 14971395
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 11826465
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 10252736
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 10063819
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 14887843
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 13362636
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 13838880
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 14760159
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 13735598
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 13106739
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 16016733
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 14464640
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 13233930
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 12328844
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 12532041
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 10992578
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 3831507
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 2313465
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 4528944
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 3173263
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 3572034
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 3404596
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 2249025
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 3774387
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 3648649
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 2319433
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 3011179
+  },
+  {
+    "region": "Amnian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 2453187
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 2848485
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 3162370
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 2695145
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 3352396
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 4198575
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 3218002
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 4044010
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 3777531
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 3271342
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 4612905
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 3915447
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 3067069
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 7083159
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 6354977
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 7433431
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 7534180
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 5570890
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 7294447
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 7099557
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 6902035
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 7470296
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 7039089
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 7015096
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 6634120
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 1767597
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 1264657
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 2568978
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 1550871
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 1489815
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 1473036
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 1221469
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 1521381
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1734192
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1874173
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1094851
+  },
+  {
+    "region": "Bloodlands empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1068551
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 6901719
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 6666976
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 8833989
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 8216721
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 6974571
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 6772228
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 5839131
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 6764072
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 7096805
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 6267074
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 6298734
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 6604225
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 7728611
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 8070046
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 9419350
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 9642484
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 9277521
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 9122020
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 7104862
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 8697642
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 7647982
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 8063681
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 6990721
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 8598633
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 2665100
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 3209898
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 3189828
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 3154950
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 3527130
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 3385439
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 2446140
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 2898310
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 2874978
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 2476862
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 2379432
+  },
+  {
+    "region": "Calim empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 3151413
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 4604432
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 4311436
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 4745070
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 4748706
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 5353196
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 3943531
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 3936270
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 4186284
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 4415881
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 3619389
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 3469399
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 3189634
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 2469332
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 2772275
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 3259014
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 2627950
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 2105992
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 2333626
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 3391111
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 2653725
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1901426
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1903985
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 2326267
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1551409
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 724719
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 1289531
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 772203
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 710266
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 1011774
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 848948
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 898490
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 556963
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1050115
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 852840
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 470795
+  },
+  {
+    "region": "Dwarven empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 628512
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 940870
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 921225
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 1066786
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 1157385
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 1299795
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 1342408
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 858124
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 1212341
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1144267
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1201843
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 843519
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 762783
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 902938
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 541678
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 723059
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 201472
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 702375
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 670383
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 557742
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 584277
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 485782
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 578793
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 369503
+  },
+  {
+    "region": "Eastern empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 704809
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 8864754
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 6616275
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 8679664
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 8046689
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 9313984
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 9055238
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 8338416
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 10515946
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 9017253
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 7305000
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 8734059
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 9171978
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 6026085
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 6875710
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 6790673
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 6346749
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 6002160
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 6706907
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 5799854
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 5889279
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 7139284
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 7622666
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 7282658
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 6908548
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 1133071
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 702264
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 1288657
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 1504461
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 1573844
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 1056563
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 661091
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 1379840
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1286800
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1235279
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1256397
+  },
+  {
+    "region": "Halruaan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1135597
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 151089
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 169253
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 205928
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 178456
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 329166
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 7984
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 159302
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 98724
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 150638
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 241043
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 139888
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 216543
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 4927997
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 5649465
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 5120464
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 5250102
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 4373155
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 3827962
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 4594200
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 4686721
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 5018575
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 4602279
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 5077494
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 4825587
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 938072
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 516796
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 790736
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 723480
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 951244
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 626096
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 390263
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 422056
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 746096
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 710442
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1026659
+  },
+  {
+    "region": "New neverwinter empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 832666
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 127149
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 415136
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 185908
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 233858
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 566126
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 483854
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 315004
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 708775
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 157472
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 103699
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 154193
+  },
+  {
+    "region": "None empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 282287
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 2727048
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 2435454
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 2683583
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 1998232
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 2595477
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 2136907
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 2738736
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 2635198
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 2429030
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 2900642
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 2137223
+  },
+  {
+    "region": "None empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 2549109
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 354552
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 133850
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 273864
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 240805
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 618614
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 377765
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 552732
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 378742
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 389701
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 4662
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 139172
+  },
+  {
+    "region": "None empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 310710
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 913528
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 830999
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 1176751
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 1208486
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 546603
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 825660
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 897065
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 1457546
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 904586
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1600686
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1099395
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1311360
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 1034788
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 999938
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 1094791
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 886525
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 968613
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 807434
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 965583
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 660864
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 574321
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 942614
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1077665
+  },
+  {
+    "region": "Old empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1410292
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 495173
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 296495
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 264843
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 659779
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 360756
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 87464
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 133522
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 404785
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 300315
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 531211
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 455859
+  },
+  {
+    "region": "Old empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 244838
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 10228959
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 14345806
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 14026651
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 6276684
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 5006900
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 5491352
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 6940497
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 7568610
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 5708453
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 6354887
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 5881614
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 7696137
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 14655124
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 11831981
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 14467303
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 12718908
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 12776473
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 12460509
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 12281752
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 12339822
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 14597925
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 11450922
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 11481604
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 8826328
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 2032143
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 1732770
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 2141362
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 1947118
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 2134782
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 2090224
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 1896754
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 2340650
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1685414
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1729342
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1585551
+  },
+  {
+    "region": "Purple dragon empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1854089
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 449026
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 634618
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 336722
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 372479
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 262050
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 301250
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 403132
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 574327
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 599201
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 437246
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 250771
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 400224
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 338820
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 594187
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 750246
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 446902
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 705589
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 437016
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 532662
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 796324
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 498841
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 575938
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 409400
+  },
+  {
+    "region": "Southern empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 361871
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 5420875
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 5165402
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 5861551
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 6138546
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 5092880
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 4616633
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 5089337
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 4927384
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 5238431
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 4937479
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 3211132
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 4722111
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 11705118
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 9334849
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 11680165
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 11210237
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 9898456
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 9543153
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 13489147
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 10488395
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 12154282
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 10385309
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 9720604
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 11058124
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 1936979
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 1591016
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 1174761
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 2156580
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 2630639
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 1996252
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 2110716
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 1570098
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 2360716
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 2413393
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1091863
+  },
+  {
+    "region": "Thayan empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1938500
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 1350158
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 576905
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 603169
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 803460
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 510343
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 1212377
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 1542173
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 761103
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 496120
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1001202
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 620822
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 696419
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 12921602
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 10589523
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 11021464
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 9004545
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 10825253
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 11844585
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 10762060
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 11527021
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 9115815
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 11578171
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 10198619
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 10377784
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 4069501
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 3331686
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 4844684
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 3525160
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 3846150
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 4456445
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 3332096
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 5422367
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 3298155
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 2747148
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 2946015
+  },
+  {
+    "region": "United moonshae empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 2699942
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 1951149
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 1855433
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 2047898
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 2143589
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 2140079
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 2044245
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 2121581
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 1595472
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1932866
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 1935597
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1588869
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1639662
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 3469719
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 3210627
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 3186607
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 2859893
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 2692243
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 2352641
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 2891818
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 3083676
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 2999756
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 2167211
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 2868458
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 2831238
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 868688
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 423134
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 1001454
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 722267
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 1126067
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 969545
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 1003860
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 563523
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 669935
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 802587
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 485219
+  },
+  {
+    "region": "Waterdhavian empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 663350
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 897644
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 429048
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 260483
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 709044
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 791356
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 596561
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 432618
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 449851
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 623019
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 510222
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 646997
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 571040
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 1,
+    "revenue": 954270
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 2,
+    "revenue": 778944
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 3,
+    "revenue": 1158119
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 4,
+    "revenue": 608102
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 5,
+    "revenue": 1791543
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 6,
+    "revenue": 794431
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 7,
+    "revenue": 872516
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 8,
+    "revenue": 967762
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 9,
+    "revenue": 1112813
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 10,
+    "revenue": 950927
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 11,
+    "revenue": 1065549
+  },
+  {
+    "region": "Western empire",
+    "account_type": "No key account",
+    "year": 2023,
+    "month": 12,
+    "revenue": 1074146
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 1,
+    "revenue": 147514
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 2,
+    "revenue": 220503
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 3,
+    "revenue": 175853
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 4,
+    "revenue": 92728
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 5,
+    "revenue": 157443
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 6,
+    "revenue": 79468
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 7,
+    "revenue": 472409
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 8,
+    "revenue": 295586
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 9,
+    "revenue": 8490
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 10,
+    "revenue": 295948
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 11,
+    "revenue": 223087
+  },
+  {
+    "region": "Western empire",
+    "account_type": "Private buyer",
+    "year": 2023,
+    "month": 12,
+    "revenue": 71005
+  }
+]

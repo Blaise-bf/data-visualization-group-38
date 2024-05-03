@@ -1,0 +1,324 @@
+source,target,value
+Blanket,Blood of the lycanthrope antidote,1
+Blanket,"Mirror, steel",1
+Blanket,Robe of serpents,1
+Blood of the lycanthrope antidote,"Mirror, steel",1
+Blood of the lycanthrope antidote,Robe of serpents,1
+"Mirror, steel",Robe of serpents,1
+Gloves of swimming and climbing,Half plate,1
+Gloves of swimming and climbing,Sword of life stealing,1
+Half plate,Sword of life stealing,1
+Crossbow bolts (100),"Crossbow, heavy",1
+Crossbow bolts (100),Hazirawn,1
+Crossbow bolts (100),Light hammer,1
+Crossbow bolts (100),Staff of fire,1
+"Crossbow, heavy",Hazirawn,1
+"Crossbow, heavy",Light hammer,1
+"Crossbow, heavy",Staff of fire,1
+Hazirawn,Light hammer,1
+Hazirawn,Staff of fire,1
+Light hammer,Staff of fire,1
+Arrows (100),Arrows (100),1
+Arrows (100),Breastplate,2
+Arrows (100),Crossbow bolts +3,2
+Arrows (100),Light armour +3,2
+Arrows (100),Medium armour +2,2
+Arrows (100),Shield of missile attraction,2
+Arrows (100),White dragon mask,2
+Breastplate,Crossbow bolts +3,1
+Breastplate,Light armour +3,1
+Breastplate,Medium armour +2,1
+Breastplate,Shield of missile attraction,1
+Breastplate,White dragon mask,1
+Crossbow bolts +3,Light armour +3,1
+Crossbow bolts +3,Medium armour +2,1
+Crossbow bolts +3,Shield of missile attraction,1
+Crossbow bolts +3,White dragon mask,1
+Light armour +3,Medium armour +2,1
+Light armour +3,Shield of missile attraction,1
+Light armour +3,White dragon mask,1
+Medium armour +2,Shield of missile attraction,1
+Medium armour +2,White dragon mask,1
+Shield of missile attraction,White dragon mask,1
+Horn,Rings of shared suffering,1
+Horn,Signal whistle on string,1
+Rings of shared suffering,Signal whistle on string,1
+Blowgun needles (50),Dagger of venom,1
+Blowgun needles (50),Devastation orb,1
+Blowgun needles (50),Potion of clairvoyance,1
+Blowgun needles (50),Ring of the ram,1
+Dagger of venom,Devastation orb,1
+Dagger of venom,Potion of clairvoyance,1
+Dagger of venom,Ring of the ram,1
+Devastation orb,Potion of clairvoyance,1
+Devastation orb,Ring of the ram,1
+Potion of clairvoyance,Ring of the ram,1
+Cartographer’s tools,"Clothes, traveler’s",1
+Cartographer’s tools,Component pouch,1
+Cartographer’s tools,Dwarven thrower,1
+Cartographer’s tools,Feywild shard,1
+"Clothes, traveler’s",Component pouch,1
+"Clothes, traveler’s",Dwarven thrower,1
+"Clothes, traveler’s",Feywild shard,1
+Component pouch,Dwarven thrower,1
+Component pouch,Feywild shard,1
+Dwarven thrower,Feywild shard,1
+Bridle of capturing,Potion of invisibility,1
+Bridle of capturing,Waythe,1
+Potion of invisibility,Waythe,1
+Amulet (holy symbol),Deck of illusions,1
+Amulet (holy symbol),Ring of warmth,1
+Amulet (holy symbol),Sending stones,1
+Deck of illusions,Ring of warmth,1
+Deck of illusions,Sending stones,1
+Ring of warmth,Sending stones,1
+Cartographer’s tools,Ladder (10-foot),1
+Cartographer’s tools,Mess kit,1
+Ladder (10-foot),Mess kit,1
+Cast-off armour enchantment,Longsword,1
+Cast-off armour enchantment,Paper bird,1
+Longsword,Paper bird,1
+Barrel,Hellsteel simple ranged weapon,1
+Barrel,Immovable rod,1
+Barrel,Masquerade tattoo enchantment,1
+Barrel,Scroll of protection (undead),1
+Hellsteel simple ranged weapon,Immovable rod,1
+Hellsteel simple ranged weapon,Masquerade tattoo enchantment,1
+Hellsteel simple ranged weapon,Scroll of protection (undead),1
+Immovable rod,Masquerade tattoo enchantment,1
+Immovable rod,Scroll of protection (undead),1
+Masquerade tattoo enchantment,Scroll of protection (undead),1
+Barrel,Pipe of remembrance,1
+Barrel,Sled,1
+Pipe of remembrance,Sled,1
+Gloves of missile snaring,Hat of vermin,1
+Gloves of missile snaring,Rod of resurrection,1
+Hat of vermin,Rod of resurrection,1
+Pouch,Wooden staff (druidic focus),1
+Hammer,Lyre,1
+Hammer,Wave,1
+Lyre,Wave,1
+Greatsword,Shortbow,1
+Greatsword,Sling bullets (100),1
+Shortbow,Sling bullets (100),1
+Heavy armour +1,Robes,1
+"Hammer, sledge",Ioun stone - gunner,1
+"Hammer, sledge",Net,1
+"Hammer, sledge",Pike,1
+Ioun stone - gunner,Net,1
+Ioun stone - gunner,Pike,1
+Net,Pike,1
+Goggles of night,Spell scroll level 4,1
+Bedroll,Potion of vitality,1
+Bedroll,Shavarran birch focus,1
+Bedroll,Wand of entangle,1
+Bedroll,Weapon of warning,1
+Potion of vitality,Shavarran birch focus,1
+Potion of vitality,Wand of entangle,1
+Potion of vitality,Weapon of warning,1
+Shavarran birch focus,Wand of entangle,1
+Shavarran birch focus,Weapon of warning,1
+Wand of entangle,Weapon of warning,1
+Antitoxin (crate),Bonecounter,1
+Antitoxin (crate),Glass bottle (crate),1
+Antitoxin (crate),Ioun stone - gunner,1
+Bonecounter,Glass bottle (crate),1
+Bonecounter,Ioun stone - gunner,1
+Glass bottle (crate),Ioun stone - gunner,1
+Arcane firearm,Arcane firearm,1
+Arcane firearm,Javelin of lightning,2
+Arcane firearm,Longbow,4
+Arcane firearm,Studded leather armour,2
+Javelin of lightning,Longbow,2
+Javelin of lightning,Studded leather armour,1
+Longbow,Longbow,1
+Longbow,Studded leather armour,2
+Potion of flying,Potion of frost giant strength,1
+Carpet of flying,"Pot, iron",1
+Carpet of flying,Spell scroll level 9,1
+Carpet of flying,Sword of sharpness,1
+"Pot, iron",Spell scroll level 9,1
+"Pot, iron",Sword of sharpness,1
+Spell scroll level 9,Sword of sharpness,1
+Green dragon mask,Ironfang,1
+Green dragon mask,Quarterstaff,3
+Ironfang,Quarterstaff,1
+"Clothes, traveler’s",Feather token (anchor),1
+"Clothes, traveler’s",Goggles of object reading,1
+"Clothes, traveler’s",Military boots,1
+"Clothes, traveler’s",Rope of climbing,1
+Feather token (anchor),Goggles of object reading,1
+Feather token (anchor),Military boots,1
+Feather token (anchor),Rope of climbing,1
+Goggles of object reading,Military boots,1
+Goggles of object reading,Rope of climbing,1
+Military boots,Rope of climbing,1
+Dyrrns tentacle whip,Rings of shared suffering,1
+Chain (10 feet),Disguise kit,1
+Blowgun needles (50),Glaive,1
+Blowgun needles (50),Scroll of protection (celestials),1
+Glaive,Scroll of protection (celestials),1
+Alchemist’s supplies,"Ball bearings (bag of 1,000)",1
+Cauldron of plenty,Potion of resistance,1
+Cauldron of plenty,Ring of water elemental command,1
+Cauldron of plenty,Shovel,1
+Cauldron of plenty,Sickle,1
+Potion of resistance,Ring of water elemental command,1
+Potion of resistance,Shovel,1
+Potion of resistance,Sickle,1
+Ring of water elemental command,Shovel,1
+Ring of water elemental command,Sickle,1
+Shovel,Sickle,1
+Armour of force resistance,Pan flute,1
+Armour of resistance,Bracers of archery,1
+Armour of resistance,Green dragon mask,1
+Bracers of archery,Green dragon mask,1
+Devastation orb,Orcsplitter,1
+Feather token (tree),Ring of air elemental command,1
+Bloodaxe,Outer essence shard,1
+Arrows +3,Medium armour +3,1
+Arrows +3,Mess kit,1
+Medium armour +3,Mess kit,1
+Cursed luckstone,Periapt of proof against poison,1
+Ring of invisibility,Saddle of the cavalier,1
+Ring of invisibility,Shield +3,1
+Ring of invisibility,Signal whistle on string,1
+Ring of invisibility,Sunforger,1
+Saddle of the cavalier,Shield +3,1
+Saddle of the cavalier,Signal whistle on string,1
+Saddle of the cavalier,Sunforger,1
+Shield +3,Signal whistle on string,1
+Shield +3,Sunforger,1
+Signal whistle on string,Sunforger,1
+Feather token (tree),Plate armour of etherealness,1
+Feather token (tree),Shield,1
+Feather token (tree),Wand of magic detection,1
+Feather token (tree),Wand of viscid globs,1
+Plate armour of etherealness,Shield,1
+Plate armour of etherealness,Wand of magic detection,1
+Plate armour of etherealness,Wand of viscid globs,1
+Shield,Wand of magic detection,1
+Shield,Wand of viscid globs,1
+Wand of magic detection,Wand of viscid globs,1
+Belt of fire giant strength,Boomerang +1,1
+Belt of fire giant strength,Sword of vengeance,1
+Belt of fire giant strength,Three-dragon ante set,1
+Belt of fire giant strength,Wand of lightning bolts,1
+Boomerang +1,Sword of vengeance,1
+Boomerang +1,Three-dragon ante set,1
+Boomerang +1,Wand of lightning bolts,1
+Sword of vengeance,Three-dragon ante set,1
+Sword of vengeance,Wand of lightning bolts,1
+Three-dragon ante set,Wand of lightning bolts,1
+Crossbow bolts (100),"Rope, hempen (50 feet)",1
+Amulet of the drunkard,Astral shard,1
+Amulet of the drunkard,Wand of the war mage +1,1
+Astral shard,Wand of the war mage +1,1
+Hewards handy spice pouch,Infiltrators key,1
+Hewards handy spice pouch,Sovereign glue,1
+Infiltrators key,Sovereign glue,1
+Gamblers sword,Mask of the beast,1
+Gamblers sword,Mule,1
+Mask of the beast,Mule,1
+Ring of animal influence,Staff of swarming insects,1
+Ring of animal influence,Wand of enemy detection,1
+Staff of swarming insects,Wand of enemy detection,1
+Piton (set of 10),Shadowfell shard,1
+Pack saddle,Stone of ill luck,1
+Pack saddle,Tambourine,1
+Stone of ill luck,Tambourine,1
+Drown,Pipes of haunting,1
+Anstruth harp,Potion of speed,1
+Anstruth harp,Robe of the archmagi,1
+Potion of speed,Robe of the archmagi,1
+Feather token (tree),Flute,1
+Feather token (tree),Waterskin (full),1
+Flute,Waterskin (full),1
+Irian rosewood focus,"Mirror, steel",1
+Irian rosewood focus,Moodmark paint,1
+Irian rosewood focus,Powered armour,1
+"Mirror, steel",Moodmark paint,1
+"Mirror, steel",Powered armour,1
+Moodmark paint,Powered armour,1
+Boots of striding and springing,Cauldron of plenty,1
+Boots of striding and springing,Ioun stone - sustenance,1
+Boots of striding and springing,Staff of fire,1
+Boots of striding and springing,Wings of flying,1
+Cauldron of plenty,Ioun stone - sustenance,1
+Cauldron of plenty,Staff of fire,1
+Cauldron of plenty,Wings of flying,1
+Ioun stone - sustenance,Staff of fire,1
+Ioun stone - sustenance,Wings of flying,1
+Staff of fire,Wings of flying,1
+Net,"Rope, hempen (50 feet)",1
+Net,Tambourine,1
+"Rope, hempen (50 feet)",Tambourine,1
+Arrows (100),Drown,1
+Arrows (100),Irian rosewood focus,1
+Drown,Irian rosewood focus,1
+Climbers kit,Crystal ball of true seeing,1
+Climbers kit,Emblem (holy symbol),1
+Climbers kit,Rope of entanglement,1
+Climbers kit,Shortsword,1
+Crystal ball of true seeing,Emblem (holy symbol),1
+Crystal ball of true seeing,Rope of entanglement,1
+Crystal ball of true seeing,Shortsword,1
+Emblem (holy symbol),Rope of entanglement,1
+Emblem (holy symbol),Shortsword,1
+Rope of entanglement,Shortsword,1
+Brass horn of valhalla,"Mirror, steel",1
+Brass horn of valhalla,Ring of fire elemental command,1
+"Mirror, steel",Ring of fire elemental command,1
+Carpenter’s tools,Rod of absorption,1
+Dart (10),Paper (one package),1
+Dart (10),Totem (druidic focus),1
+Dart (10),Viol,1
+Dart (10),Wagon,1
+Paper (one package),Totem (druidic focus),1
+Paper (one package),Viol,1
+Paper (one package),Wagon,1
+Totem (druidic focus),Viol,1
+Totem (druidic focus),Wagon,1
+Viol,Wagon,1
+Quarterstaff,Quarterstaff,1
+Hewards handy haversack,Potion of vitality,1
+Hewards handy haversack,Potion of water breathing,1
+Potion of vitality,Potion of water breathing,1
+Crossbow bolts +1,Riding steeder,1
+Crossbow bolts +1,Robe of summer,1
+Crossbow bolts +1,Shortbow,1
+Crossbow bolts +1,Wand of lightning bolts,1
+Riding steeder,Robe of summer,1
+Riding steeder,Shortbow,1
+Riding steeder,Wand of lightning bolts,1
+Robe of summer,Shortbow,1
+Robe of summer,Wand of lightning bolts,1
+Shortbow,Wand of lightning bolts,1
+Crossbow bolts +3,Wagon,1
+"Case, crossbow bolt",Hunting trap,1
+"Case, crossbow bolt",Kythrian manchineel focus,1
+"Case, crossbow bolt",Shield,1
+Hunting trap,Kythrian manchineel focus,1
+Hunting trap,Shield,1
+Kythrian manchineel focus,Shield,1
+Bottled breath,Duplicitous manuscript,1
+Bottled breath,Smoldering armor enchantment,1
+Bottled breath,Wand of scowls,1
+Duplicitous manuscript,Smoldering armor enchantment,1
+Duplicitous manuscript,Wand of scowls,1
+Smoldering armor enchantment,Wand of scowls,1
+Chain (10 feet),Cowboy hat,1
+Bell,Pot of awakening,1
+Bell,Boots of speed,1
+Bell,Shield +2,1
+Bell,Spell scroll: cantrip,1
+Boots of speed,Shield +2,1
+Boots of speed,Spell scroll: cantrip,1
+Shield +2,Spell scroll: cantrip,1
+Obsidian flint dragon plate,Ring of swimming,1
+Cart,Deck of illusions,1
+Cart,Painter’s supplies,1
+Cart,Talisman of the sphere,1
+Deck of illusions,Painter’s supplies,1
+Deck of illusions,Talisman of the sphere,1
+Painter’s supplies,Talisman of the sphere,1
