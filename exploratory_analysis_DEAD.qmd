@@ -493,6 +493,144 @@ write(toJSON(df_delays, pretty = TRUE), "delays.json")
 
 ```{r}
 df_join |> 
-  group_by(year, type)
+  select(products, order_id) |> 
+  mutate(
+    products = str_trim(str_to_sentence(products)),
+    order_id = as.character(order_id)
+  ) |> 
+  head(250) |> 
+write_csv("df_dead.csv")
+
+```
+
+```{python}
+import pandas as pd
+from itertools import combinations
+from collections import defaultdict
+
+# Load the data
+data = pd.read_csv('df_dead.csv')
+
+# Prepare the data for pairing
+# Group by OrderID and collect products
+grouped = data.groupby('order_id')['products'].apply(list)
+
+# Function to count pairs
+def count_pairs(items):
+    # Create a sorted combination of items to ensure consistency (A, B) == (B, A)
+    for item_pair in combinations(sorted(items), 2):
+        yield item_pair
+
+# Counter for pairs
+pair_counter = defaultdict(int)
+
+# Iterate over each order and update the count of each pair
+for products in grouped:
+    for pair in count_pairs(products):
+        pair_counter[pair] += 1
+
+# Create a DataFrame from the pair counter
+pair_df = pd.DataFrame(((pair[0], pair[1], count) for pair, count in pair_counter.items()),
+                       columns=['source', 'target', 'value'])
+
+# Save the pair DataFrame to a new CSV (optional)
+pair_df.to_csv('product_pairs.csv', index=False)
+
+# If you want to convert this to a JSON format suitable for an arc diagram:
+nodes = list(set(pair_df['source']).union(set(pair_df['target'])))
+nodes = [{'id': node} for node in nodes]
+links = pair_df.to_dict(orient='records')
+result = {'nodes': nodes, 'links': links}
+
+# Save to JSON (you might need additional steps depending on your visualization library)
+import json
+with open('arc_diagram_data.json', 'w') as f:
+    json.dump(result, f, indent = 4)
+
+```
+
+```{python}
+import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+data = pd.read_csv("data/products_basket_analysis.csv")
+# Initialize a directed graph
+G = nx.DiGraph()
+
+# Add nodes and edges from the dataframe
+for idx, row in data.iterrows():
+    # Adding nodes for each unique product
+    G.add_node(row['antecedent_name'], area=row['Area'])
+    G.add_node(row['consequent_name_1'], area=row['Area'])
+    G.add_node(row['consequent_name_2'], area=row['Area'])
+    
+    # Adding edges with the value as weight
+    G.add_edge(row['antecedent_name'], row['consequent_name_1'], weight=row['value'])
+    G.add_edge(row['antecedent_name'], row['consequent_name_2'], weight=row['value'])
+
+# Draw the network graph
+plt.figure(figsize=(12, 12))
+pos = nx.spring_layout(G)  # positions for all nodes
+nx.draw_networkx_nodes(G, pos, node_size=700)
+nx.draw_networkx_edges(G, pos, width=1)
+nx.draw_networkx_labels(G, pos, font_size=8, font_family='sans-serif')
+
+# Show edge weights
+edge_labels = nx.get_edge_attributes(G, 'weight')
+nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+
+plt.title('Network Diagram of Products and Relationships')
+plt.axis('off')  # Turn off the axis
+plt.show()
+
+
+```
+
+```{r}
+# Load necessary libraries
+library(dplyr)
+library(jsonlite)
+
+# Read the data from CSV
+data <- read.csv("data/products_basket_analysis.csv")
+
+# Generate nodes data
+nodes <- data %>%
+  select(antecedent_name, Area) %>%
+  distinct() %>%
+  rename(id = antecedent_name, group = Area) %>%
+  bind_rows(
+    data %>%
+      select(consequent_name_1, Area) %>%
+      distinct() %>%
+      rename(id = consequent_name_1, group = Area),
+    data %>%
+      select(consequent_name_2, Area) %>%
+      distinct() %>%
+      rename(id = consequent_name_2, group = Area)
+  ) %>%
+  distinct()
+
+# Generate links data
+links <- data %>%
+  select(antecedent_name, consequent_name_1, value) %>%
+  rename(source = antecedent_name, target = consequent_name_1) %>%
+  bind_rows(
+    data %>%
+      select(antecedent_name, consequent_name_2, value) %>%
+      rename(source = antecedent_name, target = consequent_name_2)
+  )
+
+# Combine nodes and links into a list
+graph <- list(
+  nodes = nodes,
+  links = links
+)
+
+# Convert the graph data to JSON
+json_data <- toJSON(graph, pretty = TRUE)
+
+# Optionally, write the JSON to a file
+write(json_data, "network_data.json")
 
 ```
