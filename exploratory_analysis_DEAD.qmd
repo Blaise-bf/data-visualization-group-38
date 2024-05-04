@@ -78,6 +78,10 @@ df_orders_wide <- orders |>
 ```
 
 ```{r}
+customers
+```
+
+```{r}
 #| echo: false
 df_join <- df_orders_wide |> 
   select(!territory) |> 
@@ -633,4 +637,8 @@ json_data <- toJSON(graph, pretty = TRUE)
 # Optionally, write the JSON to a file
 write(json_data, "network_data.json")
 
+```
+
+```{r}
+df_join
 ```

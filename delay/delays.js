@@ -30,6 +30,8 @@ function drawDelayPattern(svg, data) {
         svg.attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
         .append('g')
+        .attr("viewBox", [0, 0, width , height + 100])
+        .style('flex', '1')
         .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
     const xScale = d3.scalePoint()

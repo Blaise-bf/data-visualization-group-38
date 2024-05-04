@@ -21,12 +21,14 @@ function loadData() {
         const filteredData = data.filter(d => d.year === year);
         const regionData = filteredData.filter(d => d.area === region)
         const uniqueTypes = Array.from(d3.group(filteredData, d => d.type).keys());
-        console.log(regionData)
+        console.log(regionData);
 
         console.log(uniqueTypes);
         drawCharts(regionData, year, frequency, uniqueTypes, useProportions);
     });
 }
+
+
 
 // Update the chart when the toggle between abasolute and relative value changes
 propotionSelector.addEventListener('change', loadData)
