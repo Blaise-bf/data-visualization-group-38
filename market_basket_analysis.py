@@ -1,6 +1,7 @@
 import pandas as pd
 from mlxtend.frequent_patterns import apriori
 from mlxtend.frequent_patterns import association_rules
+import json
 
 def clean_df(df_in):
 
@@ -192,4 +193,40 @@ underdark_products_final['Area'] = 'Underdark'
 
 products_final = pd.concat([north_products_final, east_products_final, south_products_final, west_products_final, underdark_products_final], ignore_index=True)
 
+products_final = products_final.sort_values(by=['Area', 'value'], ascending=False)
+
+products_final['rank'] = products_final.groupby('Area')['value'].rank()
+
 products_final.to_csv('data/products_basket_analysis.csv')
+
+regions_json = []
+for area, group in products_final.groupby('Area'):
+    region_data = {'area': area, 'children': []}
+    for _, row in group.iterrows():
+        antecedent_name = row['antecedent_name']
+        value = row['value']
+        consequent_name_1 = row['consequent_name_1']
+        consequent_name_2 = row['consequent_name_2']
+        rank = row['rank']
+        
+        # Create antecedent node
+        antecedent_node = {
+            'antecedent_name': antecedent_name,
+            'rank': rank,
+            'children': [{'value': value,
+            'consequent_name_1': consequent_name_1,
+            'consequent_name_2': consequent_name_2,
+            }]
+        }
+        region_data['children'].append(antecedent_node)
+    
+    regions_json.append(region_data)
+
+# Convert to JSON string
+
+json_data = {'area': 'World', 'children': regions_json}
+
+json_data = json.dumps(json_data, indent=2)
+
+with open('data/products_basket_analysis.json', 'w') as f:
+    f.write(json_data)

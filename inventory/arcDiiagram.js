@@ -32,7 +32,7 @@ function arcDiagram(data) {
   // A color scale for the nodes and links.
   const color = d3.scaleOrdinal()
     .domain(source.map(d => d.group).sort(d3.ascending))
-    .range(["#e6ab02", "#e6ab02", "#e6ab02", "#e6ab02", "#e6ab02", "#e6ab02", "#a6761d", "#666666"])
+    .range(["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"])
     .unknown("#aaa");
 
   // A function of a link, that checks that source and target have the same group and returns
