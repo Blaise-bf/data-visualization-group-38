@@ -142,6 +142,7 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
         .domain(data.map(d => d.week))
         .range([0, 2 * Math.PI])
         .align(0);
+    const g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
     const y = d3.scaleRadial()
         .domain([0, d3.max(data, d => d.revenue)])
@@ -199,7 +200,7 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
 
-
+// Add legend
         svg.append("g")
         .selectAll()
         .data(color.domain())
@@ -214,15 +215,50 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
               .attr("y", 9)
               .attr("dy", "0.35em")
               .text(d => d));
-
-              svg.append("text")
-              .attr("x", 0)
-              .attr("y", 100)
-              .attr("text-anchor", "middle")
-              .style("font-size", "13px")
-              .style("font-weight", "bold")
-              .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+    // Add info on total revenue
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 100)
+        .attr("text-anchor", "middle")
+        .style("font-size", "13px")
+        .style("font-weight", "bold")
+        .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+    // add x axis tick marks
+    const monthMapping = {
+        1: "January",
+        13: "March",
+        27: "June",
+        40: "September",
+        
+      };
       
+      const label = svg.append('g').selectAll("g")
+    .data(data)
+    .enter().append("g")
+      .attr("text-anchor", "middle")
+      .attr("transform", function(d) {
+        return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+      });
+
+// Append tick marks only for specified weeks
+label.filter(function(d) { return monthMapping[d.week]; })  // Only select data points that are in the monthMapping
+  .append("line")
+    .attr("x2", -5)
+    .attr("stroke", "#808080");  // Grey color for the tick mark
+
+// Append text only for specified weeks
+label.filter(function(d) { return monthMapping[d.week]; })
+  .append("text")
+    .attr("transform", function(d) {
+        return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+    })
+    .attr("fill", "#808080")  // Grey color for the text
+    .text(function(d) {
+        return monthMapping[d.week]; // Use month names based on the week number
+    });
+      
+
+
                // Tooltip setup
     const tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -351,9 +387,41 @@ function createRadialChartMonth(svg, data, title, totalRevenue, scaleRadius, typ
               .style("font-weight", "bold")
               .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
       
-            const tooltip = d3.select("#tooltip")
+              const monthMapping = {
+                1: "January",
+                3: "March",
+                6: "June",
+                9: "September",
+                
+              };
+              
+              const label = svg.append('g').selectAll("g")
+            .data(data)
+            .enter().append("g")
+              .attr("text-anchor", "middle")
+              .attr("transform", function(d) {
+                return "rotate(" + ((x(d.month) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+              });
+        
+        // Append tick marks only for specified weeks
+        label.filter(function(d) { return monthMapping[d.month]; })  // Only select data points that are in the monthMapping
+          .append("line")
+            .attr("x2", -5)
+            .attr("stroke", "#808080");  // Grey color for the tick mark
+        
+        // Append text only for specified weeks
+        label.filter(function(d) { return monthMapping[d.month]; })
+          .append("text")
+            .attr("transform", function(d) {
+                return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+            })
+            .attr("fill", "#808080")  // Grey color for the text
+            .text(function(d) {
+                return monthMapping[d.month]; // Use month names based on the week number
+            });
 
-              svg.selectAll("path")
+    const tooltip = d3.select("#tooltip")
+           svg.selectAll("path")
     .data(data)
     .enter().append("path")
     .attr("fill", d => color(d.type))
@@ -471,7 +539,39 @@ function createRadialCharRelative(svg, data, title, totalRevenue, scaleRadius, t
               .style("font-size", "13px")
               .style("font-weight", "bold")
               .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+    //   add time points
+    const monthMapping = {
+        1: "January",
+        13: "March",
+        27: "June",
+        40: "September",
+        
+      };
       
+      const label = svg.append('g').selectAll("g")
+    .data(data)
+    .enter().append("g")
+      .attr("text-anchor", "middle")
+      .attr("transform", function(d) {
+        return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+      });
+
+// Append tick marks only for specified weeks
+label.filter(function(d) { return monthMapping[d.week]; })  // Only select data points that are in the monthMapping
+  .append("line")
+    .attr("x2", -5)
+    .attr("stroke", "#808080");  // Grey color for the tick mark
+
+// Append text only for specified weeks
+label.filter(function(d) { return monthMapping[d.week]; })
+  .append("text")
+    .attr("transform", function(d) {
+        return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+    })
+    .attr("fill", "#808080")  // Grey color for the text
+    .text(function(d) {
+        return monthMapping[d.week]; // Use month names based on the week number
+    });
                // Tooltip setup
     const tooltip = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -598,7 +698,43 @@ function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRad
               .style("font-weight", "bold")
               .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
       
-            const tooltip = d3.select("#tooltip")
+
+    // add specific time points
+    const monthMapping = {
+        1: "January",
+        3: "March",
+        6: "June",
+        9: "September",
+        
+      };
+      
+      const label = svg.append('g').selectAll("g")
+    .data(data)
+    .enter().append("g")
+      .attr("text-anchor", "middle")
+      .attr("transform", function(d) {
+        return "rotate(" + ((x(d.month) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+      });
+
+// Append tick marks only for specified weeks
+label.filter(function(d) { return monthMapping[d.month]; })  // Only select data points that are in the monthMapping
+  .append("line")
+    .attr("x2", -5)
+    .attr("stroke", "#808080");  // Grey color for the tick mark
+
+// Append text only for specified weeks
+label.filter(function(d) { return monthMapping[d.month]; })
+  .append("text")
+    .attr("transform", function(d) {
+        return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+    })
+    .attr("fill", "#808080")  // Grey color for the text
+    .text(function(d) {
+        return monthMapping[d.month]; // Use month names based on the week number
+    });
+
+    // tooltip
+    const tooltip = d3.select("#tooltip")
 
               svg.selectAll("path")
     .data(data)
