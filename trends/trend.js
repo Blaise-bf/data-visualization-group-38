@@ -12,12 +12,12 @@ function loadData() {
     const frequency = dataFrequencySelector.value;
     const region = regionSelector.value
     const useProportions = document.getElementById('absolute_vals').checked;
-    
+
     dataSource = frequency === 'weekly' ? 'trend_weekly.json' : 'trend_monthly.json';
     console.log(`year ${year}, frequency ${frequency} , region ${region} proportion: ${useProportions}`)
 
-    d3.json(dataSource).then(function(data) {
-        
+    d3.json(dataSource).then(function (data) {
+
         const filteredData = data.filter(d => d.year === year);
         const regionData = filteredData.filter(d => d.area === region)
         const uniqueTypes = Array.from(d3.group(filteredData, d => d.type).keys());
@@ -38,7 +38,7 @@ dataFrequencySelector.addEventListener('change', loadData);
 regionSelector.addEventListener("input", loadData);
 
 // Update the chart when the year changes
-slider.addEventListener('input', function() {
+slider.addEventListener('input', function () {
     output.innerHTML = `Displaying ${dataFrequencySelector.value} trend for the year ${this.value}`; // Display the default slider value;  // Update the displayed year
     loadData();  // Load the data with the new year
 });
@@ -51,15 +51,15 @@ function getData() {
     const frequency = dataFrequencySelector.value;
     const region = document.getElementById('region').value;
     const useProportions = document.getElementById('absolute_vals').checked;
-    
+
     // Correct assignment of dataSource for both scenarios
     dataSource = frequency === 'weekly' ? 'trend_weekly.json' : 'trend_monthly.json';
-    d3.json(dataSource).then(function(data) {
+    d3.json(dataSource).then(function (data) {
         console.log("Using dataSource:", dataSource);
         let filteredData = data.filter(d => d.year === year);
         filteredData = data.filter(d => d.area === region);
 
-        
+
         // Simplify the extraction of unique types using new Set and map
         const uniqueTypes = Array.from(new Set(filteredData.map(d => d.type)));
 
@@ -73,7 +73,8 @@ function getData() {
 
 
 function drawCharts(data, year, frequency, types, proportion) {
- 
+
+
     const filteredData = data.filter(d => d.year === parseInt(year));
     const businessUnits = d3.groups(filteredData, d => d.business_unit);
     const totalRevenue = d3.sum(filteredData, d => d.revenue);
@@ -85,8 +86,8 @@ function drawCharts(data, year, frequency, types, proportion) {
     // Append a div for each business unit chart to manage with flexbox
     businessUnits.forEach(([unit, unitData], index) => {
         const OvearallRevenue = d3.min(unitData, d => d.total);
-        
-       
+
+
         const container = chartContainer.append("div")
             .attr("class", "chart-item container-fluid")
             .style("flex", "1")
@@ -100,8 +101,7 @@ function drawCharts(data, year, frequency, types, proportion) {
             .attr("transform", `translate(300, 300)`); // Center the radial chart
 
         // 
-        const scaleRadius = (OvearallRevenue/totalRevenue * 100) * 2; // Scale proportionally
-        
+        const scaleRadius = (OvearallRevenue / totalRevenue * 100) * 2; // Scale proportionally
 
         // Now pass the SVG, data, title, year, and total revenue to create the radial chart
 
@@ -114,7 +114,7 @@ function drawCharts(data, year, frequency, types, proportion) {
                 createRadialChart(svg, unitData, ` ${unit}`, OvearallRevenue, scaleRadius, types);
 
             }
-            
+
         } else {
 
             if (proportion) {
@@ -125,15 +125,40 @@ function drawCharts(data, year, frequency, types, proportion) {
 
             }
         }
-        
     });
+
+    const legendHeight = 50; // Adjust this value as needed to leave space for the legend
+
+    const color = d3.scaleOrdinal()
+        .domain(types)
+        .range(["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"]);
+
+    const chartDiv = chartContainer.append("div")
+        .style("position", "absolute")
+        .style("bottom", "0")
+        .style("width", "100%")
+        .style("height", `${legendHeight}px`);
+
+    // Append charts to the chartDiv
+    chartDiv.selectAll("div.chart")
+        .data(types)
+        .join("div")
+        .attr("class", "chart")
+        .style("display", "inline-block") // Display divs inline
+        .call(g => g.append("div")
+            .style("width", "15px")
+            .style("height", "18px")
+            .style("background-color", d => color(d))) // Use the data (d) to determine the color
+        .call(g => g.append("span")
+            .style("margin-left", "5px")
+            .text(d => d));
 }
 
 function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
     const width = 450, height = 550;
-    const innerRadius = 150,  outerRadius = Math.min(width + scaleRadius , height) / 2;
+    const innerRadius = 150, outerRadius = Math.min(width + scaleRadius, height) / 2;
     const year = d3.select("#year").property("value");
-    
+
     // const totalRevenue = d3.max(data.total);
 
     // console.log(data)
@@ -159,7 +184,7 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
     // Color scale
     const color = d3.scaleOrdinal()
         .domain(types)
-        .range(["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"]);
+        .range(["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"]);
     // Draw arcs
     svg.selectAll("path")
         .data(data)
@@ -171,20 +196,20 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
     svg.append("text")
         .attr("x", 110)
         .attr('class', 'legend')
-        .attr("y", -outerRadius -16)
+        .attr("y", -outerRadius - 16)
         .attr("text-anchor", "middle")
         .text(`${title} - ${year}`);
 
 
-        svg.append("g")
+    svg.append("g")
         .attr("text-anchor", "middle")
         .call(g => g.append("text")
             .attr("y", d => -y(y.ticks(5).pop()))
             .attr("dy", "-1em")
-            )
+        )
         .call(g => g.selectAll("g")
-          .data(y.ticks(5).slice(1))
-          .join("g")
+            .data(y.ticks(5).slice(1))
+            .join("g")
             .attr("fill", "none")
             .call(g => g.append("circle")
                 .attr("stroke", "#000")
@@ -196,111 +221,108 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
                 .attr("stroke", "#fff")
                 .attr("stroke-width", 5)
                 .text(y.tickFormat(5, "s"))
-             .clone(true)
+                .clone(true)
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
 
-// Add legend
-        svg.append("g")
-        .selectAll()
-        .data(color.domain())
-        .join("g")
-          .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-          .call(g => g.append("rect")
-              .attr("width", 15)
-              .attr("height", 18)
-              .attr("fill", color))
-          .call(g => g.append("text")
-              .attr("x", 22)
-              .attr("y", 9)
-              .attr("dy", "0.35em")
-              .text(d => d));
+    // Add legend
+    /*svg.append("g")
+     .selectAll()
+     .data(color.domain())
+     .join("g")
+       .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
+       .call(g => g.append("rect")
+           .attr("width", 15)
+           .attr("height", 18)
+           .attr("fill", color))
+       .call(g => g.append("text")
+           .attr("x", 22)
+           .attr("y", 9)
+           .attr("dy", "0.35em")
+           .text(d => d));*/
     // Add info on total revenue
-        svg.append("text")
+    svg.append("text")
         .attr("x", 0)
         .attr("y", 100)
         .attr("text-anchor", "middle")
         .style("font-size", "13px")
         .style("font-weight", "bold")
-        .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+        .text(`${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
     // add x axis tick marks
     const monthMapping = {
         1: "January",
         13: "March",
         27: "June",
         40: "September",
-        
-      };
-      
-      const label = svg.append('g').selectAll("g")
-    .data(data)
-    .enter().append("g")
-      .attr("text-anchor", "middle")
-      .attr("transform", function(d) {
-        return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
-      });
 
-// Append tick marks only for specified weeks
-label.filter(function(d) { return monthMapping[d.week]; })  // Only select data points that are in the monthMapping
-  .append("line")
-    .attr("x2", -5)
-    .attr("stroke", "#808080");  // Grey color for the tick mark
+    };
 
-// Append text only for specified weeks
-label.filter(function(d) { return monthMapping[d.week]; })
-  .append("text")
-    .attr("transform", function(d) {
-        return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
-    })
-    .attr("fill", "#808080")  // Grey color for the text
-    .text(function(d) {
-        return monthMapping[d.week]; // Use month names based on the week number
-    });
-      
+    const label = svg.append('g').selectAll("g")
+        .data(data)
+        .enter().append("g")
+        .attr("text-anchor", "middle")
+        .attr("transform", function (d) {
+            return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+        });
+
+    // Append tick marks only for specified weeks
+    label.filter(function (d) { return monthMapping[d.week]; })  // Only select data points that are in the monthMapping
+        .append("line")
+        .attr("x2", -5)
+        .attr("stroke", "#808080");  // Grey color for the tick mark
+
+    // Append text only for specified weeks
+    label.filter(function (d) { return monthMapping[d.week]; })
+        .append("text")
+        .attr("transform", function (d) {
+            return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+        })
+        .attr("fill", "#808080")  // Grey color for the text
+        .text(function (d) {
+            return monthMapping[d.week]; // Use month names based on the week number
+        });
 
 
-               // Tooltip setup
+
+    // Tooltip setup
     const tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("position", "absolute")
-    .style("visibility", "hidden")
-    .style("padding", "10px")
-    .style("background", "white")
-    .style("border", "1px solid #ccc")
-    .style("border-radius", "5px")
-    .style("pointer-events", "none");
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("padding", "10px")
+        .style("background", "white")
+        .style("border", "1px solid #ccc")
+        .style("border-radius", "5px")
+        .style("pointer-events", "none");
     console.log(tooltip)
 
-// Draw arcs with tooltip
-svg.selectAll("path")
-    .data(data)
-    .enter().append("path")
-    .attr("fill", d => color(d.type))
-    .attr("d", arc)
-    .on("mouseover", function(event, d) {
-        tooltip.html(`Week: ${d.week}<br>Type: ${d.type}<br>Percentage: ${d.revenue}%`)
-               .style("visibility", "visible");
-    })
-    .on("mousemove", function(event) {
-        tooltip.style("top", (event.pageY - 10) + "px")
-               .style("left", (event.pageX + 10) + "px");
-    })
-    .on("mouseout", function() {
-        tooltip.style("visibility", "hidden");
-    })
-    
+    // Draw arcs with tooltip
+    svg.selectAll("path")
+        .data(data)
+        .enter().append("path")
+        .attr("fill", d => color(d.type))
+        .attr("d", arc)
+        .on("mouseover", function (event, d) {
+            tooltip.html(`Week: ${d.week}<br>Type: ${d.type}<br>Percentage: ${d.revenue}%`)
+                .style("visibility", "visible");
+        })
+        .on("mousemove", function (event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function () {
+            tooltip.style("visibility", "hidden");
+        })
+
 }
-
-
-
 
 function createRadialChartMonth(svg, data, title, totalRevenue, scaleRadius, types) {
     const width = 450, height = 550;
-    const innerRadius = 150,  outerRadius = Math.min(width + scaleRadius , height) / 2;
+    const innerRadius = 150, outerRadius = Math.min(width + scaleRadius, height) / 2;
     const year = d3.select("#year").property("value");
-    
 
-   
+
+
     // Setup scales and arcs
     const x = d3.scaleBand()
         .domain(data.map(d => d.month))
@@ -322,7 +344,7 @@ function createRadialChartMonth(svg, data, title, totalRevenue, scaleRadius, typ
     // Color scale
     const color = d3.scaleOrdinal()
         .domain(types)
-        .range(["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"]);
+        .range(["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"]);
     // Draw arcs
     svg.selectAll("path")
         .data(data)
@@ -334,20 +356,20 @@ function createRadialChartMonth(svg, data, title, totalRevenue, scaleRadius, typ
     svg.append("text")
         .attr("x", 110)
         .attr('class', 'legend')
-        .attr("y", -outerRadius -16)
+        .attr("y", -outerRadius - 16)
         .attr("text-anchor", "middle")
         .text(`${title} - ${year}`);
 
 
-        svg.append("g")
+    svg.append("g")
         .attr("text-anchor", "middle")
         .call(g => g.append("text")
             .attr("y", d => -y(y.ticks(5).pop()))
             .attr("dy", "-1em")
-            )
+        )
         .call(g => g.selectAll("g")
-          .data(y.ticks(5).slice(1))
-          .join("g")
+            .data(y.ticks(5).slice(1))
+            .join("g")
             .attr("fill", "none")
             .call(g => g.append("circle")
                 .attr("stroke", "#000")
@@ -359,98 +381,96 @@ function createRadialChartMonth(svg, data, title, totalRevenue, scaleRadius, typ
                 .attr("stroke", "#fff")
                 .attr("stroke-width", 5)
                 .text(y.tickFormat(5, "s"))
-             .clone(true)
+                .clone(true)
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
 
 
-        svg.append("g")
-        .selectAll()
-        .data(color.domain())
-        .join("g")
-          .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-          .call(g => g.append("rect")
-              .attr("width", 15)
-              .attr("height", 18)
-              .attr("fill", color))
-          .call(g => g.append("text")
-              .attr("x", 22)
-              .attr("y", 9)
-              .attr("dy", "0.35em")
-              .text(d => d));
+    /*        svg.append("g")
+            .selectAll()
+            .data(color.domain())
+            .join("g")
+              .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
+              .call(g => g.append("rect")
+                  .attr("width", 15)
+                  .attr("height", 18)
+                  .attr("fill", color))
+              .call(g => g.append("text")
+                  .attr("x", 22)
+                  .attr("y", 9)
+                  .attr("dy", "0.35em")
+                  .text(d => d));*/
 
-              svg.append("text")
-              .attr("x", 0)
-              .attr("y", 100)
-              .attr("text-anchor", "middle")
-              .style("font-size", "13px")
-              .style("font-weight", "bold")
-              .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
-      
-              const monthMapping = {
-                1: "January",
-                3: "March",
-                6: "June",
-                9: "September",
-                
-              };
-              
-              const label = svg.append('g').selectAll("g")
-            .data(data)
-            .enter().append("g")
-              .attr("text-anchor", "middle")
-              .attr("transform", function(d) {
-                return "rotate(" + ((x(d.month) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
-              });
-        
-        // Append tick marks only for specified weeks
-        label.filter(function(d) { return monthMapping[d.month]; })  // Only select data points that are in the monthMapping
-          .append("line")
-            .attr("x2", -5)
-            .attr("stroke", "#808080");  // Grey color for the tick mark
-        
-        // Append text only for specified weeks
-        label.filter(function(d) { return monthMapping[d.month]; })
-          .append("text")
-            .attr("transform", function(d) {
-                return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
-            })
-            .attr("fill", "#808080")  // Grey color for the text
-            .text(function(d) {
-                return monthMapping[d.month]; // Use month names based on the week number
-            });
+    svg.append("text")
+        .attr("x", 0)
+        .attr("y", 100)
+        .attr("text-anchor", "middle")
+        .style("font-size", "13px")
+        .style("font-weight", "bold")
+        .text(`${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+
+    const monthMapping = {
+        1: "January",
+        3: "March",
+        6: "June",
+        9: "September",
+
+    };
+
+    const label = svg.append('g').selectAll("g")
+        .data(data)
+        .enter().append("g")
+        .attr("text-anchor", "middle")
+        .attr("transform", function (d) {
+            return "rotate(" + ((x(d.month) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+        });
+
+    // Append tick marks only for specified weeks
+    label.filter(function (d) { return monthMapping[d.month]; })  // Only select data points that are in the monthMapping
+        .append("line")
+        .attr("x2", -5)
+        .attr("stroke", "#808080");  // Grey color for the tick mark
+
+    // Append text only for specified weeks
+    label.filter(function (d) { return monthMapping[d.month]; })
+        .append("text")
+        .attr("transform", function (d) {
+            return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+        })
+        .attr("fill", "#808080")  // Grey color for the text
+        .text(function (d) {
+            return monthMapping[d.month]; // Use month names based on the week number
+        });
 
     const tooltip = d3.select("#tooltip")
-           svg.selectAll("path")
-    .data(data)
-    .enter().append("path")
-    .attr("fill", d => color(d.type))
-    .attr("d", arc)
-    .on("mouseover", (event, d) => {
-        tooltip.style("visibility", "visible");
-        console.log(2)
-        drawDonutChart(d.proportion); // Assuming 'd.details' holds the breakdown data for the donut
-    })
-    .on("mousemove", (event) => {
-        tooltip.style("left", (event.pageX + 10) + "px")
-               .style("top", (event.pageY - 10) + "px");
-    })
-    .on("mouseout", () => {
-        tooltip.style("visibility", "hidden");
-        d3.select(".tooltip svg").remove(); // Optionally clear the donut chart
-    });
+    svg.selectAll("path")
+        .data(data)
+        .enter().append("path")
+        .attr("fill", d => color(d.type))
+        .attr("d", arc)
+        .on("mouseover", (event, d) => {
+            tooltip.style("visibility", "visible");
+            console.log(2)
+            drawDonutChart(d.proportion); // Assuming 'd.details' holds the breakdown data for the donut
+        })
+        .on("mousemove", (event) => {
+            tooltip.style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 10) + "px");
+        })
+        .on("mouseout", () => {
+            tooltip.style("visibility", "hidden");
+            d3.select(".tooltip svg").remove(); // Optionally clear the donut chart
+        });
 
-
-    
 }
 
 
 
 function createRadialCharRelative(svg, data, title, totalRevenue, scaleRadius, types) {
     const width = 450, height = 550;
-    const innerRadius = 150,  outerRadius = Math.min(width + scaleRadius , height) / 2;
+    const innerRadius = 150, outerRadius = Math.min(width + scaleRadius, height) / 2;
     const year = d3.select("#year").property("value");
-    
+
     // const totalRevenue = d3.max(data.total);
 
     // console.log(data)
@@ -475,7 +495,7 @@ function createRadialCharRelative(svg, data, title, totalRevenue, scaleRadius, t
     // Color scale
     const color = d3.scaleOrdinal()
         .domain(types)
-        .range(["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"]);
+        .range(["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"]);
     // Draw arcs
     svg.selectAll("path")
         .data(data)
@@ -487,20 +507,20 @@ function createRadialCharRelative(svg, data, title, totalRevenue, scaleRadius, t
     svg.append("text")
         .attr("x", 110)
         .attr('class', 'legend')
-        .attr("y", -outerRadius -16)
+        .attr("y", -outerRadius - 16)
         .attr("text-anchor", "middle")
         .text(`${title} - ${year}`);
 
 
-        svg.append("g")
+    svg.append("g")
         .attr("text-anchor", "middle")
         .call(g => g.append("text")
             .attr("y", d => -y(y.ticks(5).pop()))
             .attr("dy", "-1em")
-            )
+        )
         .call(g => g.selectAll("g")
-          .data(y.ticks(5).slice(1))
-          .join("g")
+            .data(y.ticks(5).slice(1))
+            .join("g")
             .attr("fill", "none")
             .call(g => g.append("circle")
                 .attr("stroke", "#000")
@@ -512,106 +532,106 @@ function createRadialCharRelative(svg, data, title, totalRevenue, scaleRadius, t
                 .attr("stroke", "#fff")
                 .attr("stroke-width", 5)
                 .text(y.tickFormat(5, "s"))
-             .clone(true)
+                .clone(true)
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
 
 
-        svg.append("g")
-        .selectAll()
-        .data(color.domain())
-        .join("g")
-          .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-          .call(g => g.append("rect")
-              .attr("width", 15)
-              .attr("height", 18)
-              .attr("fill", color))
-          .call(g => g.append("text")
-              .attr("x", 22)
-              .attr("y", 9)
-              .attr("dy", "0.35em")
-              .text(d => d));
+    /*        svg.append("g")
+            .selectAll()
+            .data(color.domain())
+            .join("g")
+              .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
+              .call(g => g.append("rect")
+                  .attr("width", 15)
+                  .attr("height", 18)
+                  .attr("fill", color))
+              .call(g => g.append("text")
+                  .attr("x", 22)
+                  .attr("y", 9)
+                  .attr("dy", "0.35em")
+                  .text(d => d));*/
 
-              svg.append("text")
-              .attr("x", 0)
-              .attr("y", 100)
-              .attr("text-anchor", "middle")
-              .style("font-size", "13px")
-              .style("font-weight", "bold")
-              .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+    svg.append("text")
+        .attr("x", 0)
+        .attr("y", 100)
+        .attr("text-anchor", "middle")
+        .style("font-size", "13px")
+        .style("font-weight", "bold")
+        .text(`${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
     //   add time points
     const monthMapping = {
         1: "January",
         13: "March",
         27: "June",
         40: "September",
-        
-      };
-      
-      const label = svg.append('g').selectAll("g")
-    .data(data)
-    .enter().append("g")
-      .attr("text-anchor", "middle")
-      .attr("transform", function(d) {
-        return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
-      });
 
-// Append tick marks only for specified weeks
-label.filter(function(d) { return monthMapping[d.week]; })  // Only select data points that are in the monthMapping
-  .append("line")
-    .attr("x2", -5)
-    .attr("stroke", "#808080");  // Grey color for the tick mark
+    };
 
-// Append text only for specified weeks
-label.filter(function(d) { return monthMapping[d.week]; })
-  .append("text")
-    .attr("transform", function(d) {
-        return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
-    })
-    .attr("fill", "#808080")  // Grey color for the text
-    .text(function(d) {
-        return monthMapping[d.week]; // Use month names based on the week number
-    });
-               // Tooltip setup
+    const label = svg.append('g').selectAll("g")
+        .data(data)
+        .enter().append("g")
+        .attr("text-anchor", "middle")
+        .attr("transform", function (d) {
+            return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+        });
+
+    // Append tick marks only for specified weeks
+    label.filter(function (d) { return monthMapping[d.week]; })  // Only select data points that are in the monthMapping
+        .append("line")
+        .attr("x2", -5)
+        .attr("stroke", "#808080");  // Grey color for the tick mark
+
+    // Append text only for specified weeks
+    label.filter(function (d) { return monthMapping[d.week]; })
+        .append("text")
+        .attr("transform", function (d) {
+            return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+        })
+        .attr("fill", "#808080")  // Grey color for the text
+        .text(function (d) {
+            return monthMapping[d.week]; // Use month names based on the week number
+        });
+    // Tooltip setup
     const tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("position", "absolute")
-    .style("visibility", "hidden")
-    .style("padding", "10px")
-    .style("background", "white")
-    .style("border", "1px solid #ccc")
-    .style("border-radius", "5px")
-    .style("pointer-events", "none");
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("padding", "10px")
+        .style("background", "white")
+        .style("border", "1px solid #ccc")
+        .style("border-radius", "5px")
+        .style("pointer-events", "none");
     console.log(tooltip)
 
-// Draw arcs with tooltip
-svg.selectAll("path")
-    .data(data)
-    .enter().append("path")
-    .attr("fill", d => color(d.type))
-    .attr("d", arc)
-    .on("mouseover", function(event, d) {
-        tooltip.html(`Week: ${d.week}<br>Type: ${d.type}<br>Percentage: ${d.proportion}%`)
-               .style("visibility", "visible");
-    })
-    .on("mousemove", function(event) {
-        tooltip.style("top", (event.pageY - 10) + "px")
-               .style("left", (event.pageX + 10) + "px");
-    })
-    .on("mouseout", function() {
-        tooltip.style("visibility", "hidden");
-    })
-    
+    // Draw arcs with tooltip
+    svg.selectAll("path")
+        .data(data)
+        .enter().append("path")
+        .attr("fill", d => color(d.type))
+        .attr("d", arc)
+        .on("mouseover", function (event, d) {
+            tooltip.html(`Week: ${d.week}<br>Type: ${d.type}<br>Percentage: ${d.proportion}%`)
+                .style("visibility", "visible");
+        })
+        .on("mousemove", function (event) {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                .style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function () {
+            tooltip.style("visibility", "hidden");
+        })
+
 }
 
 
 function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRadius, types) {
     const width = 450, height = 550;
-    const innerRadius = 150,  outerRadius = Math.min(width + scaleRadius , height) / 2;
+    const innerRadius = 150, outerRadius = Math.min(width + scaleRadius, height) / 2;
     const year = d3.select("#year").property("value");
-    
 
-   
+
+
     // Setup scales and arcs
     const x = d3.scaleBand()
         .domain(data.map(d => d.month))
@@ -633,7 +653,7 @@ function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRad
     // Color scale
     const color = d3.scaleOrdinal()
         .domain(types)
-        .range(["#1b9e77","#d95f02","#7570b3","#e7298a","#66a61e","#e6ab02","#a6761d","#666666"]);
+        .range(["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"]);
     // Draw arcs
     svg.selectAll("path")
         .data(data)
@@ -645,20 +665,20 @@ function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRad
     svg.append("text")
         .attr("x", 110)
         .attr('class', 'legend')
-        .attr("y", -outerRadius -16)
+        .attr("y", -outerRadius - 16)
         .attr("text-anchor", "middle")
         .text(`${title} - ${year}`);
 
 
-        svg.append("g")
+    svg.append("g")
         .attr("text-anchor", "middle")
         .call(g => g.append("text")
             .attr("y", d => -y(y.ticks(5).pop()))
             .attr("dy", "-1em")
-            )
+        )
         .call(g => g.selectAll("g")
-          .data(y.ticks(5).slice(1))
-          .join("g")
+            .data(y.ticks(5).slice(1))
+            .join("g")
             .attr("fill", "none")
             .call(g => g.append("circle")
                 .attr("stroke", "#000")
@@ -670,34 +690,34 @@ function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRad
                 .attr("stroke", "#fff")
                 .attr("stroke-width", 5)
                 .text(y.tickFormat(5, "s"))
-             .clone(true)
+                .clone(true)
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
 
 
-        svg.append("g")
-        .selectAll()
-        .data(color.domain())
-        .join("g")
-          .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-          .call(g => g.append("rect")
-              .attr("width", 15)
-              .attr("height", 18)
-              .attr("fill", color))
-          .call(g => g.append("text")
-              .attr("x", 22)
-              .attr("y", 9)
-              .attr("dy", "0.35em")
-              .text(d => d));
+    /*svg.append("g")
+    .selectAll()
+    .data(color.domain())
+    .join("g")
+      .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
+      .call(g => g.append("rect")
+          .attr("width", 15)
+          .attr("height", 18)
+          .attr("fill", color))
+      .call(g => g.append("text")
+          .attr("x", 22)
+          .attr("y", 9)
+          .attr("dy", "0.35em")
+          .text(d => d));*/
 
-              svg.append("text")
-              .attr("x", 0)
-              .attr("y", 100)
-              .attr("text-anchor", "middle")
-              .style("font-size", "13px")
-              .style("font-weight", "bold")
-              .text(`Total Revenue: ${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
-      
+    svg.append("text")
+        .attr("x", 0)
+        .attr("y", 100)
+        .attr("text-anchor", "middle")
+        .style("font-size", "13px")
+        .style("font-weight", "bold")
+        .text(`${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+
 
     // add specific time points
     const monthMapping = {
@@ -705,55 +725,55 @@ function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRad
         3: "March",
         6: "June",
         9: "September",
-        
-      };
-      
-      const label = svg.append('g').selectAll("g")
-    .data(data)
-    .enter().append("g")
-      .attr("text-anchor", "middle")
-      .attr("transform", function(d) {
-        return "rotate(" + ((x(d.month) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
-      });
 
-// Append tick marks only for specified weeks
-label.filter(function(d) { return monthMapping[d.month]; })  // Only select data points that are in the monthMapping
-  .append("line")
-    .attr("x2", -5)
-    .attr("stroke", "#808080");  // Grey color for the tick mark
+    };
 
-// Append text only for specified weeks
-label.filter(function(d) { return monthMapping[d.month]; })
-  .append("text")
-    .attr("transform", function(d) {
-        return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
-    })
-    .attr("fill", "#808080")  // Grey color for the text
-    .text(function(d) {
-        return monthMapping[d.month]; // Use month names based on the week number
-    });
+    const label = svg.append('g').selectAll("g")
+        .data(data)
+        .enter().append("g")
+        .attr("text-anchor", "middle")
+        .attr("transform", function (d) {
+            return "rotate(" + ((x(d.month) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+        });
+
+    // Append tick marks only for specified weeks
+    label.filter(function (d) { return monthMapping[d.month]; })  // Only select data points that are in the monthMapping
+        .append("line")
+        .attr("x2", -5)
+        .attr("stroke", "#808080");  // Grey color for the tick mark
+
+    // Append text only for specified weeks
+    label.filter(function (d) { return monthMapping[d.month]; })
+        .append("text")
+        .attr("transform", function (d) {
+            return (x(d.week) + x.bandwidth() / 2 + Math.PI / 2) % (2 * Math.PI) < Math.PI ? "rotate(90)translate(0,16)" : "rotate(-90)translate(0,-9)";
+        })
+        .attr("fill", "#808080")  // Grey color for the text
+        .text(function (d) {
+            return monthMapping[d.month]; // Use month names based on the week number
+        });
 
     // tooltip
     const tooltip = d3.select("#tooltip")
 
-              svg.selectAll("path")
-    .data(data)
-    .enter().append("path")
-    .attr("fill", d => color(d.type))
-    .attr("d", arc)
-    .on("mouseover", (event, d) => {
-        tooltip.style("visibility", "visible");
-        console.log(2)
-        drawDonutChart(d.proportion); // Assuming 'd.details' holds the breakdown data for the donut
-    })
-    .on("mousemove", (event) => {
-        tooltip.style("left", (event.pageX + 10) + "px")
-               .style("top", (event.pageY - 10) + "px");
-    })
-    .on("mouseout", () => {
-        tooltip.style("visibility", "hidden");
-        d3.select(".tooltip svg").remove(); // Optionally clear the donut chart
-    });
+    svg.selectAll("path")
+        .data(data)
+        .enter().append("path")
+        .attr("fill", d => color(d.type))
+        .attr("d", arc)
+        .on("mouseover", (event, d) => {
+            tooltip.style("visibility", "visible");
+            console.log(2)
+            drawDonutChart(d.proportion); // Assuming 'd.details' holds the breakdown data for the donut
+        })
+        .on("mousemove", (event) => {
+            tooltip.style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 10) + "px");
+        })
+        .on("mouseout", () => {
+            tooltip.style("visibility", "hidden");
+            d3.select(".tooltip svg").remove(); // Optionally clear the donut chart
+        });
 
 
     svg.selectAll("path")
@@ -774,7 +794,7 @@ label.filter(function(d) { return monthMapping[d.month]; })
     }
 
 
-    
+
 }
 
 function drawDonutChart(data, color) {
