@@ -355,7 +355,7 @@ proportion_revenue_week <- df_chart1 %>%
 
 
 all_revenue_week <- bind_rows(proportion_revenue_week, proportion_revenue_week_area)
-  write(toJSON(all_revenue_week, pretty = TRUE), "trend_weekly.json")
+  write(toJSON(all_revenue_week, pretty = TRUE), "trends/trend_weekly.json")
 ```
 
 ```{r}
@@ -380,7 +380,7 @@ proportion_revenue_month <- df_chart1 %>%
 
 
 all_revenue_month <- bind_rows(proportion_revenue_month, proportion_revenue_month_area)
-write(toJSON(all_revenue_month, pretty = TRUE), "trend_monthly.json")
+write(toJSON(all_revenue_month, pretty = TRUE), "trends/trend_monthly.json")
 ```
 
 ```{r}
