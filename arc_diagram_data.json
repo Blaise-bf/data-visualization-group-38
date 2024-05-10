@@ -1,0 +1,2224 @@
+{
+    "nodes": [
+        {
+            "id": "Amulet of the drunkard"
+        },
+        {
+            "id": "Bell"
+        },
+        {
+            "id": "Pan flute"
+        },
+        {
+            "id": "Devastation orb"
+        },
+        {
+            "id": "Wand of the war mage +1"
+        },
+        {
+            "id": "Wand of magic detection"
+        },
+        {
+            "id": "Paper (one package)"
+        },
+        {
+            "id": "Waythe"
+        },
+        {
+            "id": "Waterskin (full)"
+        },
+        {
+            "id": "Shavarran birch focus"
+        },
+        {
+            "id": "Medium armour +3"
+        },
+        {
+            "id": "Goggles of object reading"
+        },
+        {
+            "id": "Cowboy hat"
+        },
+        {
+            "id": "Potion of speed"
+        },
+        {
+            "id": "Climbers kit"
+        },
+        {
+            "id": "Hazirawn"
+        },
+        {
+            "id": "Armour of force resistance"
+        },
+        {
+            "id": "Scroll of protection (undead)"
+        },
+        {
+            "id": "Three-dragon ante set"
+        },
+        {
+            "id": "Wand of lightning bolts"
+        },
+        {
+            "id": "Crossbow bolts +1"
+        },
+        {
+            "id": "Masquerade tattoo enchantment"
+        },
+        {
+            "id": "Pipe of remembrance"
+        },
+        {
+            "id": "Gloves of missile snaring"
+        },
+        {
+            "id": "Heavy armour +1"
+        },
+        {
+            "id": "Shield +2"
+        },
+        {
+            "id": "Smoldering armor enchantment"
+        },
+        {
+            "id": "Brass horn of valhalla"
+        },
+        {
+            "id": "Drown"
+        },
+        {
+            "id": "Talisman of the sphere"
+        },
+        {
+            "id": "Robes"
+        },
+        {
+            "id": "Chain (10 feet)"
+        },
+        {
+            "id": "Boots of striding and springing"
+        },
+        {
+            "id": "Hat of vermin"
+        },
+        {
+            "id": "Belt of fire giant strength"
+        },
+        {
+            "id": "Crossbow bolts +3"
+        },
+        {
+            "id": "Immovable rod"
+        },
+        {
+            "id": "Sword of life stealing"
+        },
+        {
+            "id": "Tambourine"
+        },
+        {
+            "id": "Anstruth harp"
+        },
+        {
+            "id": "Signal whistle on string"
+        },
+        {
+            "id": "Staff of fire"
+        },
+        {
+            "id": "Military boots"
+        },
+        {
+            "id": "Rope of climbing"
+        },
+        {
+            "id": "Saddle of the cavalier"
+        },
+        {
+            "id": "Infiltrators key"
+        },
+        {
+            "id": "Potion of invisibility"
+        },
+        {
+            "id": "Robe of summer"
+        },
+        {
+            "id": "Stone of ill luck"
+        },
+        {
+            "id": "Disguise kit"
+        },
+        {
+            "id": "Clothes, traveler\u2019s"
+        },
+        {
+            "id": "Potion of clairvoyance"
+        },
+        {
+            "id": "Wand of viscid globs"
+        },
+        {
+            "id": "Pipes of haunting"
+        },
+        {
+            "id": "Weapon of warning"
+        },
+        {
+            "id": "Sword of vengeance"
+        },
+        {
+            "id": "Potion of flying"
+        },
+        {
+            "id": "Ring of swimming"
+        },
+        {
+            "id": "Bedroll"
+        },
+        {
+            "id": "Quarterstaff"
+        },
+        {
+            "id": "Spell scroll level 4"
+        },
+        {
+            "id": "Plate armour of etherealness"
+        },
+        {
+            "id": "Ball bearings (bag of 1,000)"
+        },
+        {
+            "id": "Medium armour +2"
+        },
+        {
+            "id": "Duplicitous manuscript"
+        },
+        {
+            "id": "Rope, hempen (50 feet)"
+        },
+        {
+            "id": "Ioun stone - sustenance"
+        },
+        {
+            "id": "Arcane firearm"
+        },
+        {
+            "id": "Mirror, steel"
+        },
+        {
+            "id": "Sling bullets (100)"
+        },
+        {
+            "id": "Mule"
+        },
+        {
+            "id": "Arrows (100)"
+        },
+        {
+            "id": "Irian rosewood focus"
+        },
+        {
+            "id": "Sickle"
+        },
+        {
+            "id": "Ring of warmth"
+        },
+        {
+            "id": "Horn"
+        },
+        {
+            "id": "Gamblers sword"
+        },
+        {
+            "id": "Wand of entangle"
+        },
+        {
+            "id": "Outer essence shard"
+        },
+        {
+            "id": "Javelin of lightning"
+        },
+        {
+            "id": "Mess kit"
+        },
+        {
+            "id": "Paper bird"
+        },
+        {
+            "id": "Sled"
+        },
+        {
+            "id": "Painter\u2019s supplies"
+        },
+        {
+            "id": "Ioun stone - gunner"
+        },
+        {
+            "id": "Armour of resistance"
+        },
+        {
+            "id": "Case, crossbow bolt"
+        },
+        {
+            "id": "Net"
+        },
+        {
+            "id": "Glaive"
+        },
+        {
+            "id": "Wooden staff (druidic focus)"
+        },
+        {
+            "id": "Shortsword"
+        },
+        {
+            "id": "Sword of sharpness"
+        },
+        {
+            "id": "Dagger of venom"
+        },
+        {
+            "id": "Shield +3"
+        },
+        {
+            "id": "Feather token (anchor)"
+        },
+        {
+            "id": "Wand of enemy detection"
+        },
+        {
+            "id": "Pouch"
+        },
+        {
+            "id": "Bracers of archery"
+        },
+        {
+            "id": "Studded leather armour"
+        },
+        {
+            "id": "Wagon"
+        },
+        {
+            "id": "Wings of flying"
+        },
+        {
+            "id": "Crossbow bolts (100)"
+        },
+        {
+            "id": "Potion of resistance"
+        },
+        {
+            "id": "Sovereign glue"
+        },
+        {
+            "id": "Piton (set of 10)"
+        },
+        {
+            "id": "Shield"
+        },
+        {
+            "id": "Longbow"
+        },
+        {
+            "id": "Moodmark paint"
+        },
+        {
+            "id": "Bonecounter"
+        },
+        {
+            "id": "Rings of shared suffering"
+        },
+        {
+            "id": "Viol"
+        },
+        {
+            "id": "Green dragon mask"
+        },
+        {
+            "id": "Shadowfell shard"
+        },
+        {
+            "id": "Ring of animal influence"
+        },
+        {
+            "id": "Breastplate"
+        },
+        {
+            "id": "Astral shard"
+        },
+        {
+            "id": "Barrel"
+        },
+        {
+            "id": "Dyrrns tentacle whip"
+        },
+        {
+            "id": "Antitoxin (crate)"
+        },
+        {
+            "id": "Periapt of proof against poison"
+        },
+        {
+            "id": "Component pouch"
+        },
+        {
+            "id": "Emblem (holy symbol)"
+        },
+        {
+            "id": "Blowgun needles (50)"
+        },
+        {
+            "id": "Staff of swarming insects"
+        },
+        {
+            "id": "Hammer, sledge"
+        },
+        {
+            "id": "White dragon mask"
+        },
+        {
+            "id": "Pot of awakening"
+        },
+        {
+            "id": "Feather token (tree)"
+        },
+        {
+            "id": "Robe of the archmagi"
+        },
+        {
+            "id": "Spell scroll level 9"
+        },
+        {
+            "id": "Dwarven thrower"
+        },
+        {
+            "id": "Sunforger"
+        },
+        {
+            "id": "Pike"
+        },
+        {
+            "id": "Scroll of protection (celestials)"
+        },
+        {
+            "id": "Riding steeder"
+        },
+        {
+            "id": "Crossbow, heavy"
+        },
+        {
+            "id": "Potion of water breathing"
+        },
+        {
+            "id": "Pot, iron"
+        },
+        {
+            "id": "Half plate"
+        },
+        {
+            "id": "Ladder (10-foot)"
+        },
+        {
+            "id": "Goggles of night"
+        },
+        {
+            "id": "Totem (druidic focus)"
+        },
+        {
+            "id": "Boots of speed"
+        },
+        {
+            "id": "Obsidian flint dragon plate"
+        },
+        {
+            "id": "Arrows +3"
+        },
+        {
+            "id": "Feywild shard"
+        },
+        {
+            "id": "Kythrian manchineel focus"
+        },
+        {
+            "id": "Wand of scowls"
+        },
+        {
+            "id": "Shortbow"
+        },
+        {
+            "id": "Glass bottle (crate)"
+        },
+        {
+            "id": "Boomerang +1"
+        },
+        {
+            "id": "Cast-off armour enchantment"
+        },
+        {
+            "id": "Carpet of flying"
+        },
+        {
+            "id": "Alchemist\u2019s supplies"
+        },
+        {
+            "id": "Cartographer\u2019s tools"
+        },
+        {
+            "id": "Longsword"
+        },
+        {
+            "id": "Ring of water elemental command"
+        },
+        {
+            "id": "Light armour +3"
+        },
+        {
+            "id": "Potion of vitality"
+        },
+        {
+            "id": "Shovel"
+        },
+        {
+            "id": "Blood of the lycanthrope antidote"
+        },
+        {
+            "id": "Greatsword"
+        },
+        {
+            "id": "Cart"
+        },
+        {
+            "id": "Ring of fire elemental command"
+        },
+        {
+            "id": "Lyre"
+        },
+        {
+            "id": "Sending stones"
+        },
+        {
+            "id": "Orcsplitter"
+        },
+        {
+            "id": "Powered armour"
+        },
+        {
+            "id": "Blanket"
+        },
+        {
+            "id": "Hellsteel simple ranged weapon"
+        },
+        {
+            "id": "Rope of entanglement"
+        },
+        {
+            "id": "Dart (10)"
+        },
+        {
+            "id": "Hunting trap"
+        },
+        {
+            "id": "Gloves of swimming and climbing"
+        },
+        {
+            "id": "Bloodaxe"
+        },
+        {
+            "id": "Robe of serpents"
+        },
+        {
+            "id": "Wave"
+        },
+        {
+            "id": "Cursed luckstone"
+        },
+        {
+            "id": "Ring of invisibility"
+        },
+        {
+            "id": "Mask of the beast"
+        },
+        {
+            "id": "Ring of the ram"
+        },
+        {
+            "id": "Pack saddle"
+        },
+        {
+            "id": "Deck of illusions"
+        },
+        {
+            "id": "Hewards handy spice pouch"
+        },
+        {
+            "id": "Potion of frost giant strength"
+        },
+        {
+            "id": "Flute"
+        },
+        {
+            "id": "Rod of absorption"
+        },
+        {
+            "id": "Light hammer"
+        },
+        {
+            "id": "Ironfang"
+        },
+        {
+            "id": "Carpenter\u2019s tools"
+        },
+        {
+            "id": "Hewards handy haversack"
+        },
+        {
+            "id": "Shield of missile attraction"
+        },
+        {
+            "id": "Bottled breath"
+        },
+        {
+            "id": "Crystal ball of true seeing"
+        },
+        {
+            "id": "Ring of air elemental command"
+        },
+        {
+            "id": "Spell scroll: cantrip"
+        },
+        {
+            "id": "Hammer"
+        },
+        {
+            "id": "Bridle of capturing"
+        },
+        {
+            "id": "Rod of resurrection"
+        },
+        {
+            "id": "Amulet (holy symbol)"
+        },
+        {
+            "id": "Cauldron of plenty"
+        }
+    ],
+    "links": [
+        {
+            "source": "Blanket",
+            "target": "Blood of the lycanthrope antidote",
+            "value": 1
+        },
+        {
+            "source": "Blanket",
+            "target": "Mirror, steel",
+            "value": 1
+        },
+        {
+            "source": "Blanket",
+            "target": "Robe of serpents",
+            "value": 1
+        },
+        {
+            "source": "Blood of the lycanthrope antidote",
+            "target": "Mirror, steel",
+            "value": 1
+        },
+        {
+            "source": "Blood of the lycanthrope antidote",
+            "target": "Robe of serpents",
+            "value": 1
+        },
+        {
+            "source": "Mirror, steel",
+            "target": "Robe of serpents",
+            "value": 1
+        },
+        {
+            "source": "Gloves of swimming and climbing",
+            "target": "Half plate",
+            "value": 1
+        },
+        {
+            "source": "Gloves of swimming and climbing",
+            "target": "Sword of life stealing",
+            "value": 1
+        },
+        {
+            "source": "Half plate",
+            "target": "Sword of life stealing",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts (100)",
+            "target": "Crossbow, heavy",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts (100)",
+            "target": "Hazirawn",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts (100)",
+            "target": "Light hammer",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts (100)",
+            "target": "Staff of fire",
+            "value": 1
+        },
+        {
+            "source": "Crossbow, heavy",
+            "target": "Hazirawn",
+            "value": 1
+        },
+        {
+            "source": "Crossbow, heavy",
+            "target": "Light hammer",
+            "value": 1
+        },
+        {
+            "source": "Crossbow, heavy",
+            "target": "Staff of fire",
+            "value": 1
+        },
+        {
+            "source": "Hazirawn",
+            "target": "Light hammer",
+            "value": 1
+        },
+        {
+            "source": "Hazirawn",
+            "target": "Staff of fire",
+            "value": 1
+        },
+        {
+            "source": "Light hammer",
+            "target": "Staff of fire",
+            "value": 1
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Arrows (100)",
+            "value": 1
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Breastplate",
+            "value": 2
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Crossbow bolts +3",
+            "value": 2
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Light armour +3",
+            "value": 2
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Medium armour +2",
+            "value": 2
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Shield of missile attraction",
+            "value": 2
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "White dragon mask",
+            "value": 2
+        },
+        {
+            "source": "Breastplate",
+            "target": "Crossbow bolts +3",
+            "value": 1
+        },
+        {
+            "source": "Breastplate",
+            "target": "Light armour +3",
+            "value": 1
+        },
+        {
+            "source": "Breastplate",
+            "target": "Medium armour +2",
+            "value": 1
+        },
+        {
+            "source": "Breastplate",
+            "target": "Shield of missile attraction",
+            "value": 1
+        },
+        {
+            "source": "Breastplate",
+            "target": "White dragon mask",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +3",
+            "target": "Light armour +3",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +3",
+            "target": "Medium armour +2",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +3",
+            "target": "Shield of missile attraction",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +3",
+            "target": "White dragon mask",
+            "value": 1
+        },
+        {
+            "source": "Light armour +3",
+            "target": "Medium armour +2",
+            "value": 1
+        },
+        {
+            "source": "Light armour +3",
+            "target": "Shield of missile attraction",
+            "value": 1
+        },
+        {
+            "source": "Light armour +3",
+            "target": "White dragon mask",
+            "value": 1
+        },
+        {
+            "source": "Medium armour +2",
+            "target": "Shield of missile attraction",
+            "value": 1
+        },
+        {
+            "source": "Medium armour +2",
+            "target": "White dragon mask",
+            "value": 1
+        },
+        {
+            "source": "Shield of missile attraction",
+            "target": "White dragon mask",
+            "value": 1
+        },
+        {
+            "source": "Horn",
+            "target": "Rings of shared suffering",
+            "value": 1
+        },
+        {
+            "source": "Horn",
+            "target": "Signal whistle on string",
+            "value": 1
+        },
+        {
+            "source": "Rings of shared suffering",
+            "target": "Signal whistle on string",
+            "value": 1
+        },
+        {
+            "source": "Blowgun needles (50)",
+            "target": "Dagger of venom",
+            "value": 1
+        },
+        {
+            "source": "Blowgun needles (50)",
+            "target": "Devastation orb",
+            "value": 1
+        },
+        {
+            "source": "Blowgun needles (50)",
+            "target": "Potion of clairvoyance",
+            "value": 1
+        },
+        {
+            "source": "Blowgun needles (50)",
+            "target": "Ring of the ram",
+            "value": 1
+        },
+        {
+            "source": "Dagger of venom",
+            "target": "Devastation orb",
+            "value": 1
+        },
+        {
+            "source": "Dagger of venom",
+            "target": "Potion of clairvoyance",
+            "value": 1
+        },
+        {
+            "source": "Dagger of venom",
+            "target": "Ring of the ram",
+            "value": 1
+        },
+        {
+            "source": "Devastation orb",
+            "target": "Potion of clairvoyance",
+            "value": 1
+        },
+        {
+            "source": "Devastation orb",
+            "target": "Ring of the ram",
+            "value": 1
+        },
+        {
+            "source": "Potion of clairvoyance",
+            "target": "Ring of the ram",
+            "value": 1
+        },
+        {
+            "source": "Cartographer\u2019s tools",
+            "target": "Clothes, traveler\u2019s",
+            "value": 1
+        },
+        {
+            "source": "Cartographer\u2019s tools",
+            "target": "Component pouch",
+            "value": 1
+        },
+        {
+            "source": "Cartographer\u2019s tools",
+            "target": "Dwarven thrower",
+            "value": 1
+        },
+        {
+            "source": "Cartographer\u2019s tools",
+            "target": "Feywild shard",
+            "value": 1
+        },
+        {
+            "source": "Clothes, traveler\u2019s",
+            "target": "Component pouch",
+            "value": 1
+        },
+        {
+            "source": "Clothes, traveler\u2019s",
+            "target": "Dwarven thrower",
+            "value": 1
+        },
+        {
+            "source": "Clothes, traveler\u2019s",
+            "target": "Feywild shard",
+            "value": 1
+        },
+        {
+            "source": "Component pouch",
+            "target": "Dwarven thrower",
+            "value": 1
+        },
+        {
+            "source": "Component pouch",
+            "target": "Feywild shard",
+            "value": 1
+        },
+        {
+            "source": "Dwarven thrower",
+            "target": "Feywild shard",
+            "value": 1
+        },
+        {
+            "source": "Bridle of capturing",
+            "target": "Potion of invisibility",
+            "value": 1
+        },
+        {
+            "source": "Bridle of capturing",
+            "target": "Waythe",
+            "value": 1
+        },
+        {
+            "source": "Potion of invisibility",
+            "target": "Waythe",
+            "value": 1
+        },
+        {
+            "source": "Amulet (holy symbol)",
+            "target": "Deck of illusions",
+            "value": 1
+        },
+        {
+            "source": "Amulet (holy symbol)",
+            "target": "Ring of warmth",
+            "value": 1
+        },
+        {
+            "source": "Amulet (holy symbol)",
+            "target": "Sending stones",
+            "value": 1
+        },
+        {
+            "source": "Deck of illusions",
+            "target": "Ring of warmth",
+            "value": 1
+        },
+        {
+            "source": "Deck of illusions",
+            "target": "Sending stones",
+            "value": 1
+        },
+        {
+            "source": "Ring of warmth",
+            "target": "Sending stones",
+            "value": 1
+        },
+        {
+            "source": "Cartographer\u2019s tools",
+            "target": "Ladder (10-foot)",
+            "value": 1
+        },
+        {
+            "source": "Cartographer\u2019s tools",
+            "target": "Mess kit",
+            "value": 1
+        },
+        {
+            "source": "Ladder (10-foot)",
+            "target": "Mess kit",
+            "value": 1
+        },
+        {
+            "source": "Cast-off armour enchantment",
+            "target": "Longsword",
+            "value": 1
+        },
+        {
+            "source": "Cast-off armour enchantment",
+            "target": "Paper bird",
+            "value": 1
+        },
+        {
+            "source": "Longsword",
+            "target": "Paper bird",
+            "value": 1
+        },
+        {
+            "source": "Barrel",
+            "target": "Hellsteel simple ranged weapon",
+            "value": 1
+        },
+        {
+            "source": "Barrel",
+            "target": "Immovable rod",
+            "value": 1
+        },
+        {
+            "source": "Barrel",
+            "target": "Masquerade tattoo enchantment",
+            "value": 1
+        },
+        {
+            "source": "Barrel",
+            "target": "Scroll of protection (undead)",
+            "value": 1
+        },
+        {
+            "source": "Hellsteel simple ranged weapon",
+            "target": "Immovable rod",
+            "value": 1
+        },
+        {
+            "source": "Hellsteel simple ranged weapon",
+            "target": "Masquerade tattoo enchantment",
+            "value": 1
+        },
+        {
+            "source": "Hellsteel simple ranged weapon",
+            "target": "Scroll of protection (undead)",
+            "value": 1
+        },
+        {
+            "source": "Immovable rod",
+            "target": "Masquerade tattoo enchantment",
+            "value": 1
+        },
+        {
+            "source": "Immovable rod",
+            "target": "Scroll of protection (undead)",
+            "value": 1
+        },
+        {
+            "source": "Masquerade tattoo enchantment",
+            "target": "Scroll of protection (undead)",
+            "value": 1
+        },
+        {
+            "source": "Barrel",
+            "target": "Pipe of remembrance",
+            "value": 1
+        },
+        {
+            "source": "Barrel",
+            "target": "Sled",
+            "value": 1
+        },
+        {
+            "source": "Pipe of remembrance",
+            "target": "Sled",
+            "value": 1
+        },
+        {
+            "source": "Gloves of missile snaring",
+            "target": "Hat of vermin",
+            "value": 1
+        },
+        {
+            "source": "Gloves of missile snaring",
+            "target": "Rod of resurrection",
+            "value": 1
+        },
+        {
+            "source": "Hat of vermin",
+            "target": "Rod of resurrection",
+            "value": 1
+        },
+        {
+            "source": "Pouch",
+            "target": "Wooden staff (druidic focus)",
+            "value": 1
+        },
+        {
+            "source": "Hammer",
+            "target": "Lyre",
+            "value": 1
+        },
+        {
+            "source": "Hammer",
+            "target": "Wave",
+            "value": 1
+        },
+        {
+            "source": "Lyre",
+            "target": "Wave",
+            "value": 1
+        },
+        {
+            "source": "Greatsword",
+            "target": "Shortbow",
+            "value": 1
+        },
+        {
+            "source": "Greatsword",
+            "target": "Sling bullets (100)",
+            "value": 1
+        },
+        {
+            "source": "Shortbow",
+            "target": "Sling bullets (100)",
+            "value": 1
+        },
+        {
+            "source": "Heavy armour +1",
+            "target": "Robes",
+            "value": 1
+        },
+        {
+            "source": "Hammer, sledge",
+            "target": "Ioun stone - gunner",
+            "value": 1
+        },
+        {
+            "source": "Hammer, sledge",
+            "target": "Net",
+            "value": 1
+        },
+        {
+            "source": "Hammer, sledge",
+            "target": "Pike",
+            "value": 1
+        },
+        {
+            "source": "Ioun stone - gunner",
+            "target": "Net",
+            "value": 1
+        },
+        {
+            "source": "Ioun stone - gunner",
+            "target": "Pike",
+            "value": 1
+        },
+        {
+            "source": "Net",
+            "target": "Pike",
+            "value": 1
+        },
+        {
+            "source": "Goggles of night",
+            "target": "Spell scroll level 4",
+            "value": 1
+        },
+        {
+            "source": "Bedroll",
+            "target": "Potion of vitality",
+            "value": 1
+        },
+        {
+            "source": "Bedroll",
+            "target": "Shavarran birch focus",
+            "value": 1
+        },
+        {
+            "source": "Bedroll",
+            "target": "Wand of entangle",
+            "value": 1
+        },
+        {
+            "source": "Bedroll",
+            "target": "Weapon of warning",
+            "value": 1
+        },
+        {
+            "source": "Potion of vitality",
+            "target": "Shavarran birch focus",
+            "value": 1
+        },
+        {
+            "source": "Potion of vitality",
+            "target": "Wand of entangle",
+            "value": 1
+        },
+        {
+            "source": "Potion of vitality",
+            "target": "Weapon of warning",
+            "value": 1
+        },
+        {
+            "source": "Shavarran birch focus",
+            "target": "Wand of entangle",
+            "value": 1
+        },
+        {
+            "source": "Shavarran birch focus",
+            "target": "Weapon of warning",
+            "value": 1
+        },
+        {
+            "source": "Wand of entangle",
+            "target": "Weapon of warning",
+            "value": 1
+        },
+        {
+            "source": "Antitoxin (crate)",
+            "target": "Bonecounter",
+            "value": 1
+        },
+        {
+            "source": "Antitoxin (crate)",
+            "target": "Glass bottle (crate)",
+            "value": 1
+        },
+        {
+            "source": "Antitoxin (crate)",
+            "target": "Ioun stone - gunner",
+            "value": 1
+        },
+        {
+            "source": "Bonecounter",
+            "target": "Glass bottle (crate)",
+            "value": 1
+        },
+        {
+            "source": "Bonecounter",
+            "target": "Ioun stone - gunner",
+            "value": 1
+        },
+        {
+            "source": "Glass bottle (crate)",
+            "target": "Ioun stone - gunner",
+            "value": 1
+        },
+        {
+            "source": "Arcane firearm",
+            "target": "Arcane firearm",
+            "value": 1
+        },
+        {
+            "source": "Arcane firearm",
+            "target": "Javelin of lightning",
+            "value": 2
+        },
+        {
+            "source": "Arcane firearm",
+            "target": "Longbow",
+            "value": 4
+        },
+        {
+            "source": "Arcane firearm",
+            "target": "Studded leather armour",
+            "value": 2
+        },
+        {
+            "source": "Javelin of lightning",
+            "target": "Longbow",
+            "value": 2
+        },
+        {
+            "source": "Javelin of lightning",
+            "target": "Studded leather armour",
+            "value": 1
+        },
+        {
+            "source": "Longbow",
+            "target": "Longbow",
+            "value": 1
+        },
+        {
+            "source": "Longbow",
+            "target": "Studded leather armour",
+            "value": 2
+        },
+        {
+            "source": "Potion of flying",
+            "target": "Potion of frost giant strength",
+            "value": 1
+        },
+        {
+            "source": "Carpet of flying",
+            "target": "Pot, iron",
+            "value": 1
+        },
+        {
+            "source": "Carpet of flying",
+            "target": "Spell scroll level 9",
+            "value": 1
+        },
+        {
+            "source": "Carpet of flying",
+            "target": "Sword of sharpness",
+            "value": 1
+        },
+        {
+            "source": "Pot, iron",
+            "target": "Spell scroll level 9",
+            "value": 1
+        },
+        {
+            "source": "Pot, iron",
+            "target": "Sword of sharpness",
+            "value": 1
+        },
+        {
+            "source": "Spell scroll level 9",
+            "target": "Sword of sharpness",
+            "value": 1
+        },
+        {
+            "source": "Green dragon mask",
+            "target": "Ironfang",
+            "value": 1
+        },
+        {
+            "source": "Green dragon mask",
+            "target": "Quarterstaff",
+            "value": 3
+        },
+        {
+            "source": "Ironfang",
+            "target": "Quarterstaff",
+            "value": 1
+        },
+        {
+            "source": "Clothes, traveler\u2019s",
+            "target": "Feather token (anchor)",
+            "value": 1
+        },
+        {
+            "source": "Clothes, traveler\u2019s",
+            "target": "Goggles of object reading",
+            "value": 1
+        },
+        {
+            "source": "Clothes, traveler\u2019s",
+            "target": "Military boots",
+            "value": 1
+        },
+        {
+            "source": "Clothes, traveler\u2019s",
+            "target": "Rope of climbing",
+            "value": 1
+        },
+        {
+            "source": "Feather token (anchor)",
+            "target": "Goggles of object reading",
+            "value": 1
+        },
+        {
+            "source": "Feather token (anchor)",
+            "target": "Military boots",
+            "value": 1
+        },
+        {
+            "source": "Feather token (anchor)",
+            "target": "Rope of climbing",
+            "value": 1
+        },
+        {
+            "source": "Goggles of object reading",
+            "target": "Military boots",
+            "value": 1
+        },
+        {
+            "source": "Goggles of object reading",
+            "target": "Rope of climbing",
+            "value": 1
+        },
+        {
+            "source": "Military boots",
+            "target": "Rope of climbing",
+            "value": 1
+        },
+        {
+            "source": "Dyrrns tentacle whip",
+            "target": "Rings of shared suffering",
+            "value": 1
+        },
+        {
+            "source": "Chain (10 feet)",
+            "target": "Disguise kit",
+            "value": 1
+        },
+        {
+            "source": "Blowgun needles (50)",
+            "target": "Glaive",
+            "value": 1
+        },
+        {
+            "source": "Blowgun needles (50)",
+            "target": "Scroll of protection (celestials)",
+            "value": 1
+        },
+        {
+            "source": "Glaive",
+            "target": "Scroll of protection (celestials)",
+            "value": 1
+        },
+        {
+            "source": "Alchemist\u2019s supplies",
+            "target": "Ball bearings (bag of 1,000)",
+            "value": 1
+        },
+        {
+            "source": "Cauldron of plenty",
+            "target": "Potion of resistance",
+            "value": 1
+        },
+        {
+            "source": "Cauldron of plenty",
+            "target": "Ring of water elemental command",
+            "value": 1
+        },
+        {
+            "source": "Cauldron of plenty",
+            "target": "Shovel",
+            "value": 1
+        },
+        {
+            "source": "Cauldron of plenty",
+            "target": "Sickle",
+            "value": 1
+        },
+        {
+            "source": "Potion of resistance",
+            "target": "Ring of water elemental command",
+            "value": 1
+        },
+        {
+            "source": "Potion of resistance",
+            "target": "Shovel",
+            "value": 1
+        },
+        {
+            "source": "Potion of resistance",
+            "target": "Sickle",
+            "value": 1
+        },
+        {
+            "source": "Ring of water elemental command",
+            "target": "Shovel",
+            "value": 1
+        },
+        {
+            "source": "Ring of water elemental command",
+            "target": "Sickle",
+            "value": 1
+        },
+        {
+            "source": "Shovel",
+            "target": "Sickle",
+            "value": 1
+        },
+        {
+            "source": "Armour of force resistance",
+            "target": "Pan flute",
+            "value": 1
+        },
+        {
+            "source": "Armour of resistance",
+            "target": "Bracers of archery",
+            "value": 1
+        },
+        {
+            "source": "Armour of resistance",
+            "target": "Green dragon mask",
+            "value": 1
+        },
+        {
+            "source": "Bracers of archery",
+            "target": "Green dragon mask",
+            "value": 1
+        },
+        {
+            "source": "Devastation orb",
+            "target": "Orcsplitter",
+            "value": 1
+        },
+        {
+            "source": "Feather token (tree)",
+            "target": "Ring of air elemental command",
+            "value": 1
+        },
+        {
+            "source": "Bloodaxe",
+            "target": "Outer essence shard",
+            "value": 1
+        },
+        {
+            "source": "Arrows +3",
+            "target": "Medium armour +3",
+            "value": 1
+        },
+        {
+            "source": "Arrows +3",
+            "target": "Mess kit",
+            "value": 1
+        },
+        {
+            "source": "Medium armour +3",
+            "target": "Mess kit",
+            "value": 1
+        },
+        {
+            "source": "Cursed luckstone",
+            "target": "Periapt of proof against poison",
+            "value": 1
+        },
+        {
+            "source": "Ring of invisibility",
+            "target": "Saddle of the cavalier",
+            "value": 1
+        },
+        {
+            "source": "Ring of invisibility",
+            "target": "Shield +3",
+            "value": 1
+        },
+        {
+            "source": "Ring of invisibility",
+            "target": "Signal whistle on string",
+            "value": 1
+        },
+        {
+            "source": "Ring of invisibility",
+            "target": "Sunforger",
+            "value": 1
+        },
+        {
+            "source": "Saddle of the cavalier",
+            "target": "Shield +3",
+            "value": 1
+        },
+        {
+            "source": "Saddle of the cavalier",
+            "target": "Signal whistle on string",
+            "value": 1
+        },
+        {
+            "source": "Saddle of the cavalier",
+            "target": "Sunforger",
+            "value": 1
+        },
+        {
+            "source": "Shield +3",
+            "target": "Signal whistle on string",
+            "value": 1
+        },
+        {
+            "source": "Shield +3",
+            "target": "Sunforger",
+            "value": 1
+        },
+        {
+            "source": "Signal whistle on string",
+            "target": "Sunforger",
+            "value": 1
+        },
+        {
+            "source": "Feather token (tree)",
+            "target": "Plate armour of etherealness",
+            "value": 1
+        },
+        {
+            "source": "Feather token (tree)",
+            "target": "Shield",
+            "value": 1
+        },
+        {
+            "source": "Feather token (tree)",
+            "target": "Wand of magic detection",
+            "value": 1
+        },
+        {
+            "source": "Feather token (tree)",
+            "target": "Wand of viscid globs",
+            "value": 1
+        },
+        {
+            "source": "Plate armour of etherealness",
+            "target": "Shield",
+            "value": 1
+        },
+        {
+            "source": "Plate armour of etherealness",
+            "target": "Wand of magic detection",
+            "value": 1
+        },
+        {
+            "source": "Plate armour of etherealness",
+            "target": "Wand of viscid globs",
+            "value": 1
+        },
+        {
+            "source": "Shield",
+            "target": "Wand of magic detection",
+            "value": 1
+        },
+        {
+            "source": "Shield",
+            "target": "Wand of viscid globs",
+            "value": 1
+        },
+        {
+            "source": "Wand of magic detection",
+            "target": "Wand of viscid globs",
+            "value": 1
+        },
+        {
+            "source": "Belt of fire giant strength",
+            "target": "Boomerang +1",
+            "value": 1
+        },
+        {
+            "source": "Belt of fire giant strength",
+            "target": "Sword of vengeance",
+            "value": 1
+        },
+        {
+            "source": "Belt of fire giant strength",
+            "target": "Three-dragon ante set",
+            "value": 1
+        },
+        {
+            "source": "Belt of fire giant strength",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Boomerang +1",
+            "target": "Sword of vengeance",
+            "value": 1
+        },
+        {
+            "source": "Boomerang +1",
+            "target": "Three-dragon ante set",
+            "value": 1
+        },
+        {
+            "source": "Boomerang +1",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Sword of vengeance",
+            "target": "Three-dragon ante set",
+            "value": 1
+        },
+        {
+            "source": "Sword of vengeance",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Three-dragon ante set",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts (100)",
+            "target": "Rope, hempen (50 feet)",
+            "value": 1
+        },
+        {
+            "source": "Amulet of the drunkard",
+            "target": "Astral shard",
+            "value": 1
+        },
+        {
+            "source": "Amulet of the drunkard",
+            "target": "Wand of the war mage +1",
+            "value": 1
+        },
+        {
+            "source": "Astral shard",
+            "target": "Wand of the war mage +1",
+            "value": 1
+        },
+        {
+            "source": "Hewards handy spice pouch",
+            "target": "Infiltrators key",
+            "value": 1
+        },
+        {
+            "source": "Hewards handy spice pouch",
+            "target": "Sovereign glue",
+            "value": 1
+        },
+        {
+            "source": "Infiltrators key",
+            "target": "Sovereign glue",
+            "value": 1
+        },
+        {
+            "source": "Gamblers sword",
+            "target": "Mask of the beast",
+            "value": 1
+        },
+        {
+            "source": "Gamblers sword",
+            "target": "Mule",
+            "value": 1
+        },
+        {
+            "source": "Mask of the beast",
+            "target": "Mule",
+            "value": 1
+        },
+        {
+            "source": "Ring of animal influence",
+            "target": "Staff of swarming insects",
+            "value": 1
+        },
+        {
+            "source": "Ring of animal influence",
+            "target": "Wand of enemy detection",
+            "value": 1
+        },
+        {
+            "source": "Staff of swarming insects",
+            "target": "Wand of enemy detection",
+            "value": 1
+        },
+        {
+            "source": "Piton (set of 10)",
+            "target": "Shadowfell shard",
+            "value": 1
+        },
+        {
+            "source": "Pack saddle",
+            "target": "Stone of ill luck",
+            "value": 1
+        },
+        {
+            "source": "Pack saddle",
+            "target": "Tambourine",
+            "value": 1
+        },
+        {
+            "source": "Stone of ill luck",
+            "target": "Tambourine",
+            "value": 1
+        },
+        {
+            "source": "Drown",
+            "target": "Pipes of haunting",
+            "value": 1
+        },
+        {
+            "source": "Anstruth harp",
+            "target": "Potion of speed",
+            "value": 1
+        },
+        {
+            "source": "Anstruth harp",
+            "target": "Robe of the archmagi",
+            "value": 1
+        },
+        {
+            "source": "Potion of speed",
+            "target": "Robe of the archmagi",
+            "value": 1
+        },
+        {
+            "source": "Feather token (tree)",
+            "target": "Flute",
+            "value": 1
+        },
+        {
+            "source": "Feather token (tree)",
+            "target": "Waterskin (full)",
+            "value": 1
+        },
+        {
+            "source": "Flute",
+            "target": "Waterskin (full)",
+            "value": 1
+        },
+        {
+            "source": "Irian rosewood focus",
+            "target": "Mirror, steel",
+            "value": 1
+        },
+        {
+            "source": "Irian rosewood focus",
+            "target": "Moodmark paint",
+            "value": 1
+        },
+        {
+            "source": "Irian rosewood focus",
+            "target": "Powered armour",
+            "value": 1
+        },
+        {
+            "source": "Mirror, steel",
+            "target": "Moodmark paint",
+            "value": 1
+        },
+        {
+            "source": "Mirror, steel",
+            "target": "Powered armour",
+            "value": 1
+        },
+        {
+            "source": "Moodmark paint",
+            "target": "Powered armour",
+            "value": 1
+        },
+        {
+            "source": "Boots of striding and springing",
+            "target": "Cauldron of plenty",
+            "value": 1
+        },
+        {
+            "source": "Boots of striding and springing",
+            "target": "Ioun stone - sustenance",
+            "value": 1
+        },
+        {
+            "source": "Boots of striding and springing",
+            "target": "Staff of fire",
+            "value": 1
+        },
+        {
+            "source": "Boots of striding and springing",
+            "target": "Wings of flying",
+            "value": 1
+        },
+        {
+            "source": "Cauldron of plenty",
+            "target": "Ioun stone - sustenance",
+            "value": 1
+        },
+        {
+            "source": "Cauldron of plenty",
+            "target": "Staff of fire",
+            "value": 1
+        },
+        {
+            "source": "Cauldron of plenty",
+            "target": "Wings of flying",
+            "value": 1
+        },
+        {
+            "source": "Ioun stone - sustenance",
+            "target": "Staff of fire",
+            "value": 1
+        },
+        {
+            "source": "Ioun stone - sustenance",
+            "target": "Wings of flying",
+            "value": 1
+        },
+        {
+            "source": "Staff of fire",
+            "target": "Wings of flying",
+            "value": 1
+        },
+        {
+            "source": "Net",
+            "target": "Rope, hempen (50 feet)",
+            "value": 1
+        },
+        {
+            "source": "Net",
+            "target": "Tambourine",
+            "value": 1
+        },
+        {
+            "source": "Rope, hempen (50 feet)",
+            "target": "Tambourine",
+            "value": 1
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Drown",
+            "value": 1
+        },
+        {
+            "source": "Arrows (100)",
+            "target": "Irian rosewood focus",
+            "value": 1
+        },
+        {
+            "source": "Drown",
+            "target": "Irian rosewood focus",
+            "value": 1
+        },
+        {
+            "source": "Climbers kit",
+            "target": "Crystal ball of true seeing",
+            "value": 1
+        },
+        {
+            "source": "Climbers kit",
+            "target": "Emblem (holy symbol)",
+            "value": 1
+        },
+        {
+            "source": "Climbers kit",
+            "target": "Rope of entanglement",
+            "value": 1
+        },
+        {
+            "source": "Climbers kit",
+            "target": "Shortsword",
+            "value": 1
+        },
+        {
+            "source": "Crystal ball of true seeing",
+            "target": "Emblem (holy symbol)",
+            "value": 1
+        },
+        {
+            "source": "Crystal ball of true seeing",
+            "target": "Rope of entanglement",
+            "value": 1
+        },
+        {
+            "source": "Crystal ball of true seeing",
+            "target": "Shortsword",
+            "value": 1
+        },
+        {
+            "source": "Emblem (holy symbol)",
+            "target": "Rope of entanglement",
+            "value": 1
+        },
+        {
+            "source": "Emblem (holy symbol)",
+            "target": "Shortsword",
+            "value": 1
+        },
+        {
+            "source": "Rope of entanglement",
+            "target": "Shortsword",
+            "value": 1
+        },
+        {
+            "source": "Brass horn of valhalla",
+            "target": "Mirror, steel",
+            "value": 1
+        },
+        {
+            "source": "Brass horn of valhalla",
+            "target": "Ring of fire elemental command",
+            "value": 1
+        },
+        {
+            "source": "Mirror, steel",
+            "target": "Ring of fire elemental command",
+            "value": 1
+        },
+        {
+            "source": "Carpenter\u2019s tools",
+            "target": "Rod of absorption",
+            "value": 1
+        },
+        {
+            "source": "Dart (10)",
+            "target": "Paper (one package)",
+            "value": 1
+        },
+        {
+            "source": "Dart (10)",
+            "target": "Totem (druidic focus)",
+            "value": 1
+        },
+        {
+            "source": "Dart (10)",
+            "target": "Viol",
+            "value": 1
+        },
+        {
+            "source": "Dart (10)",
+            "target": "Wagon",
+            "value": 1
+        },
+        {
+            "source": "Paper (one package)",
+            "target": "Totem (druidic focus)",
+            "value": 1
+        },
+        {
+            "source": "Paper (one package)",
+            "target": "Viol",
+            "value": 1
+        },
+        {
+            "source": "Paper (one package)",
+            "target": "Wagon",
+            "value": 1
+        },
+        {
+            "source": "Totem (druidic focus)",
+            "target": "Viol",
+            "value": 1
+        },
+        {
+            "source": "Totem (druidic focus)",
+            "target": "Wagon",
+            "value": 1
+        },
+        {
+            "source": "Viol",
+            "target": "Wagon",
+            "value": 1
+        },
+        {
+            "source": "Quarterstaff",
+            "target": "Quarterstaff",
+            "value": 1
+        },
+        {
+            "source": "Hewards handy haversack",
+            "target": "Potion of vitality",
+            "value": 1
+        },
+        {
+            "source": "Hewards handy haversack",
+            "target": "Potion of water breathing",
+            "value": 1
+        },
+        {
+            "source": "Potion of vitality",
+            "target": "Potion of water breathing",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +1",
+            "target": "Riding steeder",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +1",
+            "target": "Robe of summer",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +1",
+            "target": "Shortbow",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +1",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Riding steeder",
+            "target": "Robe of summer",
+            "value": 1
+        },
+        {
+            "source": "Riding steeder",
+            "target": "Shortbow",
+            "value": 1
+        },
+        {
+            "source": "Riding steeder",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Robe of summer",
+            "target": "Shortbow",
+            "value": 1
+        },
+        {
+            "source": "Robe of summer",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Shortbow",
+            "target": "Wand of lightning bolts",
+            "value": 1
+        },
+        {
+            "source": "Crossbow bolts +3",
+            "target": "Wagon",
+            "value": 1
+        },
+        {
+            "source": "Case, crossbow bolt",
+            "target": "Hunting trap",
+            "value": 1
+        },
+        {
+            "source": "Case, crossbow bolt",
+            "target": "Kythrian manchineel focus",
+            "value": 1
+        },
+        {
+            "source": "Case, crossbow bolt",
+            "target": "Shield",
+            "value": 1
+        },
+        {
+            "source": "Hunting trap",
+            "target": "Kythrian manchineel focus",
+            "value": 1
+        },
+        {
+            "source": "Hunting trap",
+            "target": "Shield",
+            "value": 1
+        },
+        {
+            "source": "Kythrian manchineel focus",
+            "target": "Shield",
+            "value": 1
+        },
+        {
+            "source": "Bottled breath",
+            "target": "Duplicitous manuscript",
+            "value": 1
+        },
+        {
+            "source": "Bottled breath",
+            "target": "Smoldering armor enchantment",
+            "value": 1
+        },
+        {
+            "source": "Bottled breath",
+            "target": "Wand of scowls",
+            "value": 1
+        },
+        {
+            "source": "Duplicitous manuscript",
+            "target": "Smoldering armor enchantment",
+            "value": 1
+        },
+        {
+            "source": "Duplicitous manuscript",
+            "target": "Wand of scowls",
+            "value": 1
+        },
+        {
+            "source": "Smoldering armor enchantment",
+            "target": "Wand of scowls",
+            "value": 1
+        },
+        {
+            "source": "Chain (10 feet)",
+            "target": "Cowboy hat",
+            "value": 1
+        },
+        {
+            "source": "Bell",
+            "target": "Pot of awakening",
+            "value": 1
+        },
+        {
+            "source": "Bell",
+            "target": "Boots of speed",
+            "value": 1
+        },
+        {
+            "source": "Bell",
+            "target": "Shield +2",
+            "value": 1
+        },
+        {
+            "source": "Bell",
+            "target": "Spell scroll: cantrip",
+            "value": 1
+        },
+        {
+            "source": "Boots of speed",
+            "target": "Shield +2",
+            "value": 1
+        },
+        {
+            "source": "Boots of speed",
+            "target": "Spell scroll: cantrip",
+            "value": 1
+        },
+        {
+            "source": "Shield +2",
+            "target": "Spell scroll: cantrip",
+            "value": 1
+        },
+        {
+            "source": "Obsidian flint dragon plate",
+            "target": "Ring of swimming",
+            "value": 1
+        },
+        {
+            "source": "Cart",
+            "target": "Deck of illusions",
+            "value": 1
+        },
+        {
+            "source": "Cart",
+            "target": "Painter\u2019s supplies",
+            "value": 1
+        },
+        {
+            "source": "Cart",
+            "target": "Talisman of the sphere",
+            "value": 1
+        },
+        {
+            "source": "Deck of illusions",
+            "target": "Painter\u2019s supplies",
+            "value": 1
+        },
+        {
+            "source": "Deck of illusions",
+            "target": "Talisman of the sphere",
+            "value": 1
+        },
+        {
+            "source": "Painter\u2019s supplies",
+            "target": "Talisman of the sphere",
+            "value": 1
+        }
+    ]
+}

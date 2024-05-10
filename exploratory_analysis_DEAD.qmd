@@ -24,6 +24,15 @@ library(jsonlite)
 ### 
 
 ```{r}
+# Ensures every year has 52 weeks
+standardize_week <- function(date) {
+  wk <- lubridate::week(date)
+  # Replace week number 53 with 52
+  ifelse(wk > 52, 52, wk)
+}
+```
+
+```{r}
 #| echo: false
 #| message: false
 #| warning: false
@@ -106,7 +115,7 @@ df_join <- df_orders_wide |>
     unit = "month")) |> 
   mutate(
     year = lubridate::year(order_date),
-    week = lubridate::week(order_date),
+    week = standardize_week(order_date),
     month = lubridate::month(order_date),
     month_name = lubridate::month(order_date, label = TRUE)
   ) |> 
@@ -640,5 +649,8 @@ write(json_data, "network_data.json")
 ```
 
 ```{r}
-df_join
+df_join |> 
+  mutate(is_week = isoweek(order_date), .before =  1) |> 
+  select(is_week) |> 
+  distinct()
 ```
