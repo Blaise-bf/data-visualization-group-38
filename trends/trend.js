@@ -159,9 +159,6 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
     const innerRadius = 150, outerRadius = Math.min(width + scaleRadius, height) / 2;
     const year = d3.select("#year").property("value");
 
-    // const totalRevenue = d3.max(data.total);
-
-    // console.log(data)
     // Setup scales and arcs
     const x = d3.scaleBand()
         .domain(data.map(d => d.week))
@@ -200,7 +197,6 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
         .attr("text-anchor", "middle")
         .text(`${title} - ${year}`);
 
-
     svg.append("g")
         .attr("text-anchor", "middle")
         .call(g => g.append("text")
@@ -225,29 +221,15 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
 
-    // Add legend
-    /*svg.append("g")
-     .selectAll()
-     .data(color.domain())
-     .join("g")
-       .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-       .call(g => g.append("rect")
-           .attr("width", 15)
-           .attr("height", 18)
-           .attr("fill", color))
-       .call(g => g.append("text")
-           .attr("x", 22)
-           .attr("y", 9)
-           .attr("dy", "0.35em")
-           .text(d => d));*/
     // Add info on total revenue
     svg.append("text")
         .attr("x", 0)
-        .attr("y", 100)
+        .attr("y", 0)
         .attr("text-anchor", "middle")
         .style("font-size", "13px")
         .style("font-weight", "bold")
         .text(`${totalRevenue.toLocaleString('en-US', { style: 'currency', currency: 'USD' }).slice(0, -3)}`);
+
     // add x axis tick marks
     const monthMapping = {
         1: "January",
@@ -262,7 +244,8 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
         .enter().append("g")
         .attr("text-anchor", "middle")
         .attr("transform", function (d) {
-            return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + innerRadius + ",0)";
+            // Move the labels outside of the outer radius
+            return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + (outerRadius + 40) + ",0)";
         });
 
     // Append tick marks only for specified weeks
@@ -281,8 +264,6 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
         .text(function (d) {
             return monthMapping[d.week]; // Use month names based on the week number
         });
-
-
 
     // Tooltip setup
     const tooltip = d3.select("body").append("div")
@@ -313,6 +294,18 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
         .on("mouseout", function () {
             tooltip.style("visibility", "hidden");
         })
+
+    const innerArea = d3.areaRadial()
+        .angle(d => x(d.week))
+        .innerRadius(d => y(d.revenue)) // Adjust as needed
+        .outerRadius(101);
+
+    // Draw inner area chart
+    g.append("path")
+        .datum(data)
+        .attr("fill", "steelblue") // Adjust color as needed
+        .attr("d", innerArea)
+        .attr("transform", "translate(" + -width / 2 + "," + -height / 2 + ")");;
 
 }
 
