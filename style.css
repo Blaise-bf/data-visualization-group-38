@@ -49,3 +49,8 @@ font-weight: 500;
     opacity: 0.9;
     visibility: hidden;  /* initially hidden */
 }
+
+.card {
+    width: 400;
+    height: 400;
+}
