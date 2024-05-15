@@ -306,8 +306,16 @@ df_chart1 <- df_join |>
     month = lubridate::month(order_date),
     quantity = as.integer(quantity)
   ) |> 
-  mutate(across(where(is.character), str_to_sentence))
+  mutate(across(where(is.character), str_to_sentence)) |> 
+  mutate(
+    # standardize week to 52 per year
+    week = ifelse(week > 52, 52, week )
+  )
   
+```
+
+```{r}
+df_chart1 |> filter(week > 52)
 ```
 
 ```{r}
@@ -343,6 +351,19 @@ proportion_revenue_week <- df_chart1 %>%
   mutate(proportion = total_revenue_by_type / total_revenue_per_week * 100) |> 
   rename(revenue = total_revenue_by_type) |> 
   mutate(area = "Overall")
+
+#
+df_chart1 |> 
+  group_by(business_unit, year, area) |> 
+  summarize(total = sum(revenue), .groups = "drop") |> 
+  bind_rows(
+    df_chart1 |> 
+  group_by(business_unit, year) |> 
+  summarize(total = sum(revenue), .groups = "drop") |> 
+  mutate(area = "Overall")
+    
+  )
+  
 
 
 all_revenue_week <- bind_rows(proportion_revenue_week, proportion_revenue_week_area)
@@ -640,5 +661,7 @@ write(json_data, "network_data.json")
 ```
 
 ```{r}
-df_join
+
+all_revenue_week |> 
+  filter(week>52)
 ```
