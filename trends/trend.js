@@ -26,9 +26,8 @@ function loadData() {
         console.log(uniqueTypes);
         drawCharts(regionData, year, frequency, uniqueTypes, useProportions);
     });
+
 }
-
-
 
 // Update the chart when the toggle between abasolute and relative value changes
 propotionSelector.addEventListener('change', loadData)
@@ -59,7 +58,6 @@ function getData() {
         let filteredData = data.filter(d => d.year === year);
         filteredData = data.filter(d => d.area === region);
 
-
         // Simplify the extraction of unique types using new Set and map
         const uniqueTypes = Array.from(new Set(filteredData.map(d => d.type)));
 
@@ -69,11 +67,10 @@ function getData() {
     }).catch(error => {
         console.error('Error loading or processing data:', error);
     });
+
 }
 
-
 function drawCharts(data, year, frequency, types, proportion) {
-
 
     const filteredData = data.filter(d => d.year === parseInt(year));
     const businessUnits = d3.groups(filteredData, d => d.business_unit);
@@ -86,7 +83,6 @@ function drawCharts(data, year, frequency, types, proportion) {
     // Append a div for each business unit chart to manage with flexbox
     businessUnits.forEach(([unit, unitData], index) => {
         const OvearallRevenue = d3.min(unitData, d => d.total);
-
 
         const container = chartContainer.append("div")
             .attr("class", "chart-item container-fluid")
@@ -110,7 +106,6 @@ function drawCharts(data, year, frequency, types, proportion) {
             if (proportion) {
                 createRadialCharRelative(svg, unitData, ` ${unit}`, OvearallRevenue, scaleRadius, types);
             } else {
-
                 createRadialChart(svg, unitData, ` ${unit}`, OvearallRevenue, scaleRadius, types);
 
             }
@@ -120,7 +115,6 @@ function drawCharts(data, year, frequency, types, proportion) {
             if (proportion) {
                 createRadialChartMonthRelative(svg, unitData, ` ${unit}`, OvearallRevenue, scaleRadius, types);
             } else {
-
                 createRadialChartMonth(svg, unitData, ` ${unit}`, OvearallRevenue, scaleRadius, types);
 
             }
@@ -155,6 +149,34 @@ function drawCharts(data, year, frequency, types, proportion) {
 }
 
 function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
+
+    ////////////////////////////////////////////////////////////////////////////////
+
+    const years = Array.from({ length: 5 }, (_, i) => 2019 + i); // Years 2019 to 2023
+    const areas = ["Overall", "North", "South", "West", "East", "Underdark"];
+    const business_units = ["Adventuring", "Commissions", "Luxury specialities"];
+    const data2 = [];
+    years.forEach(year => {
+        for (let week = 1; week <= 52; week++) {
+            areas.forEach(area => {
+                business_units.forEach(business_unit => {
+                    const total_customers = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
+                    const entry = {
+                        "year": year,
+                        "week": week,
+                        "area": area,
+                        "business_unit": business_unit,
+                        "totalCustomers": total_customers
+                    };
+                    data2.push(entry);
+                });
+            });
+        }
+    });
+    const filteredData2 = data2.filter(d => d.year === 2019);
+
+    //////////////////////////////////////////////////////////////////////////////////
+
     const width = 450, height = 550;
     const innerRadius = 150, outerRadius = Math.min(width + scaleRadius, height) / 2;
     const year = d3.select("#year").property("value");
@@ -182,13 +204,37 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
     const color = d3.scaleOrdinal()
         .domain(types)
         .range(["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02", "#a6761d", "#666666"]);
+
     // Draw arcs
-    svg.selectAll("path")
+    svg.selectAll(".arc")
         .data(data)
         .enter().append("path")
+        .attr("class", "arc")
         .attr("fill", d => color(d.type))
         .attr("d", arc);
 
+    ////////////////////////////////////////////////////////////////////////////////
+    const innerArea = d3.areaRadial()
+        .innerRadius(d => y(d.totalCustomers)) // Adjust as needed
+        .outerRadius(d => y(d.totalCustomers) / 2)
+        .startAngle(d => x(d.week))
+        .endAngle(d => x(d.week) + x.bandwidth());
+
+    svg.selectAll(".innerArea")
+        .data(filteredData2)
+        .enter().append("path")
+        .attr("class", "innerArea")
+        .attr("fill", d => color(d.type))
+        .attr("d", innerArea);
+    /*    
+     // Draw inner areas
+     g.append("path")
+         .datum(data)
+         .attr("fill", "steelblue") // Adjust color as needed
+         .attr("d", innerArea)
+         .attr("transform", "translate(" + -width / 2 + "," + -height / 2 + ")");;
+ */
+    ////////////////////////////////////////////////////////////////////////////////
     // Add title
     svg.append("text")
         .attr("x", 110)
@@ -198,7 +244,6 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
         .text(`${title} - ${year}`);
 
     svg.append("g")
-        .attr("text-anchor", "middle")
         .call(g => g.append("text")
             .attr("y", d => -y(y.ticks(5).pop()))
             .attr("dy", "-1em")
@@ -248,12 +293,6 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
             return "rotate(" + ((x(d.week) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")translate(" + (outerRadius + 40) + ",0)";
         });
 
-    // Append tick marks only for specified weeks
-    label.filter(function (d) { return monthMapping[d.week]; })  // Only select data points that are in the monthMapping
-        .append("line")
-        .attr("x2", -5)
-        .attr("stroke", "#808080");  // Grey color for the tick mark
-
     // Append text only for specified weeks
     label.filter(function (d) { return monthMapping[d.week]; })
         .append("text")
@@ -294,19 +333,6 @@ function createRadialChart(svg, data, title, totalRevenue, scaleRadius, types) {
         .on("mouseout", function () {
             tooltip.style("visibility", "hidden");
         })
-
-    const innerArea = d3.areaRadial()
-        .angle(d => x(d.week))
-        .innerRadius(d => y(d.revenue)) // Adjust as needed
-        .outerRadius(101);
-
-    // Draw inner area chart
-    g.append("path")
-        .datum(data)
-        .attr("fill", "steelblue") // Adjust color as needed
-        .attr("d", innerArea)
-        .attr("transform", "translate(" + -width / 2 + "," + -height / 2 + ")");;
-
 }
 
 function createRadialChartMonth(svg, data, title, totalRevenue, scaleRadius, types) {
@@ -377,22 +403,6 @@ function createRadialChartMonth(svg, data, title, totalRevenue, scaleRadius, typ
                 .clone(true)
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
-
-
-    /*        svg.append("g")
-            .selectAll()
-            .data(color.domain())
-            .join("g")
-              .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-              .call(g => g.append("rect")
-                  .attr("width", 15)
-                  .attr("height", 18)
-                  .attr("fill", color))
-              .call(g => g.append("text")
-                  .attr("x", 22)
-                  .attr("y", 9)
-                  .attr("dy", "0.35em")
-                  .text(d => d));*/
 
     svg.append("text")
         .attr("x", 0)
@@ -528,22 +538,6 @@ function createRadialCharRelative(svg, data, title, totalRevenue, scaleRadius, t
                 .clone(true)
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
-
-
-    /*        svg.append("g")
-            .selectAll()
-            .data(color.domain())
-            .join("g")
-              .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-              .call(g => g.append("rect")
-                  .attr("width", 15)
-                  .attr("height", 18)
-                  .attr("fill", color))
-              .call(g => g.append("text")
-                  .attr("x", 22)
-                  .attr("y", 9)
-                  .attr("dy", "0.35em")
-                  .text(d => d));*/
 
     svg.append("text")
         .attr("x", 0)
@@ -686,22 +680,6 @@ function createRadialChartMonthRelative(svg, data, title, totalRevenue, scaleRad
                 .clone(true)
                 .attr("fill", "#000")
                 .attr("stroke", "none")));
-
-
-    /*svg.append("g")
-    .selectAll()
-    .data(color.domain())
-    .join("g")
-      .attr("transform", (d, i, nodes) => `translate(-40,${(nodes.length / 2 - i - 1) * 20})`)
-      .call(g => g.append("rect")
-          .attr("width", 15)
-          .attr("height", 18)
-          .attr("fill", color))
-      .call(g => g.append("text")
-          .attr("x", 22)
-          .attr("y", 9)
-          .attr("dy", "0.35em")
-          .text(d => d));*/
 
     svg.append("text")
         .attr("x", 0)
