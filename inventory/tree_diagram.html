@@ -65,6 +65,16 @@
             // Render nodes
             const nodeCoords = {};
 
+            function createUniqueId(node) {
+                let path = [];
+                let current = node;
+                while (current) {
+                    path.push(current.data.antecedent_name || current.data.area || current.data.value || current.data.consequent_name_1 || current.data.consequent_name_2);
+                    current = current.parent;
+                }
+                return path.reverse().join('/');
+            }
+
             // Render links
             const links = svg.selectAll(".link")
                 .data(treeData.links().slice(5)) // Exclude links from origin to the first level
@@ -74,26 +84,21 @@
                     // Get adjusted source and target coordinates
                     const sourceCoords = polarToCartesian(d.source.x, d.source.y);
                     const targetCoords = polarToCartesian(d.target.x, d.target.y);
-
-                    // Calculate adjusted source coordinates for links
                     let adjustedSourceCoords = { x: sourceCoords.x, y: sourceCoords.y };
 
-                    // Adjust target coordinates based on the rank of the antecedent_name
-                    const rank = d.target.data.rank || 3; // Default rank is 3
-                    const lengthFactor = rank / 3; // Factor for adjusting length
+                    const rank = d.target.data.rank || 3;
+                    const lengthFactor = rank / 3;
                     const dx = targetCoords.x - adjustedSourceCoords.x;
                     const dy = targetCoords.y - adjustedSourceCoords.y;
 
-                    // Adjust target coordinates based on the rank
                     const adjustedTargetCoords = {
                         x: adjustedSourceCoords.x + dx * lengthFactor,
                         y: adjustedSourceCoords.y + dy * lengthFactor
                     };
 
-                    // Store adjusted target coordinates for the node
-                    nodeCoords[d.target.data.antecedent_name || d.target.data.area] = adjustedTargetCoords;
+                    // Store adjusted target coordinates using the unique ID
+                    nodeCoords[createUniqueId(d.target)] = adjustedTargetCoords;
 
-                    // Construct path using adjusted coordinates
                     return "M" + adjustedSourceCoords.x + "," + adjustedSourceCoords.y +
                         "L" + adjustedTargetCoords.x + "," + adjustedTargetCoords.y;
                 });
@@ -105,15 +110,14 @@
                 .attr("class", "node")
                 .attr("transform", d => {
                     let coords;
-                    if ((d.data.antecedent_name || d.data.area) && nodeCoords[d.data.antecedent_name || d.data.area]) {
-                        // Use stored coordinates for antecedent_name or area nodes
-                        coords = nodeCoords[d.data.antecedent_name || d.data.area];
+                    const uniqueId = createUniqueId(d);
+                    if (nodeCoords[uniqueId]) {
+                        coords = nodeCoords[uniqueId];
                     } else {
                         coords = polarToCartesian(d.x, d.y);
                     }
                     return `translate(${coords.x},${coords.y})`;
                 });
-
             nodes.append("circle")
                 .attr("r", 5)
                 .style("fill", "#fff")
@@ -130,22 +134,20 @@
             // Update links to use adjusted coordinates for children of antecedent_name
             links.attr("d", d => {
                 // Get adjusted source and target coordinates
-                const sourceCoords = nodeCoords[d.source.data.antecedent_name || d.source.data.area] || polarToCartesian(d.source.x, d.source.y);
+                const sourceCoords = nodeCoords[createUniqueId(d.source)] || polarToCartesian(d.source.x, d.source.y);
                 const targetCoords = polarToCartesian(d.target.x, d.target.y);
 
                 // Calculate adjusted target coordinates for links
-                const rank = d.target.data.rank || 3; // Default rank is 3
-                const lengthFactor = rank / 3; // Factor for adjusting length
+                const rank = d.target.data.rank || 3;
+                const lengthFactor = rank / 3;
                 const dx = targetCoords.x - sourceCoords.x;
                 const dy = targetCoords.y - sourceCoords.y;
 
-                // Adjust target coordinates based on the rank
                 const adjustedTargetCoords = {
                     x: sourceCoords.x + dx * lengthFactor,
                     y: sourceCoords.y + dy * lengthFactor
                 };
 
-                // Construct path using adjusted coordinates
                 return "M" + sourceCoords.x + "," + sourceCoords.y +
                     "L" + adjustedTargetCoords.x + "," + adjustedTargetCoords.y;
             });
