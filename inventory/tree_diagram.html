@@ -28,8 +28,8 @@
     <svg id="tree-container"></svg>
     <script>
         d3.json("products_basket_analysis.json").then(function (data) {
-            const width = 800;
-            const height = 800;
+            const width = 1050;
+            const height = 850;
             const radius = Math.min(width, height) / 2.2;
 
             // Create hierarchy from the data
@@ -42,6 +42,19 @@
             // Generate tree nodes and links
             const treeData = radialLayout(hierarchyRoot);
 
+            treeData.each(d => {
+                const coords = polarToCartesian(d.x, d.y);
+                d.coords = { x: coords.x, y: coords.y };
+
+                // Adjust coordinates based on the rank if node has rank
+                if (d.data.rank) {
+                    const rank = d.data.rank || 3; // Default rank is 3
+                    const lengthFactor = rank / 3; // Factor for adjusting length
+                    d.coords.x *= lengthFactor;
+                    d.coords.y *= lengthFactor;
+                }
+            });
+
             // Adjust node positioning
             const svg = d3.select("#tree-container")
                 .attr("width", width)
@@ -50,14 +63,7 @@
                 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
             // Render nodes
-            const nodes = svg.selectAll(".node")
-                .data(treeData.descendants().slice(1)) // Exclude the origin node
-                .enter().append("g")
-                .attr("class", "node")
-                .attr("transform", d => {
-                    const coords = polarToCartesian(d.x, d.y);
-                    return `translate(${coords.x},${coords.y})`;
-                });
+            const nodeCoords = {};
 
             // Render links
             const links = svg.selectAll(".link")
@@ -65,9 +71,47 @@
                 .enter().append("path")
                 .attr("class", "link")
                 .attr("d", d => {
+                    // Get adjusted source and target coordinates
                     const sourceCoords = polarToCartesian(d.source.x, d.source.y);
                     const targetCoords = polarToCartesian(d.target.x, d.target.y);
-                    return "M" + sourceCoords.x + "," + sourceCoords.y + "L" + targetCoords.x + "," + targetCoords.y;
+
+                    // Calculate adjusted source coordinates for links
+                    let adjustedSourceCoords = { x: sourceCoords.x, y: sourceCoords.y };
+
+                    // Adjust target coordinates based on the rank of the antecedent_name
+                    const rank = d.target.data.rank || 3; // Default rank is 3
+                    const lengthFactor = rank / 3; // Factor for adjusting length
+                    const dx = targetCoords.x - adjustedSourceCoords.x;
+                    const dy = targetCoords.y - adjustedSourceCoords.y;
+
+                    // Adjust target coordinates based on the rank
+                    const adjustedTargetCoords = {
+                        x: adjustedSourceCoords.x + dx * lengthFactor,
+                        y: adjustedSourceCoords.y + dy * lengthFactor
+                    };
+
+                    // Store adjusted target coordinates for the node
+                    nodeCoords[d.target.data.antecedent_name || d.target.data.area] = adjustedTargetCoords;
+
+                    // Construct path using adjusted coordinates
+                    return "M" + adjustedSourceCoords.x + "," + adjustedSourceCoords.y +
+                        "L" + adjustedTargetCoords.x + "," + adjustedTargetCoords.y;
+                });
+
+            // Render nodes
+            const nodes = svg.selectAll(".node")
+                .data(treeData.descendants().slice(1)) // Exclude the origin node
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", d => {
+                    let coords;
+                    if ((d.data.antecedent_name || d.data.area) && nodeCoords[d.data.antecedent_name || d.data.area]) {
+                        // Use stored coordinates for antecedent_name or area nodes
+                        coords = nodeCoords[d.data.antecedent_name || d.data.area];
+                    } else {
+                        coords = polarToCartesian(d.x, d.y);
+                    }
+                    return `translate(${coords.x},${coords.y})`;
                 });
 
             nodes.append("circle")
@@ -82,6 +126,29 @@
                 .attr("dominant-baseline", "middle") // Center text vertically
                 .attr("transform", d => d.x >= Math.PI ? "rotate(360)" : null)
                 .text(d => d.data.antecedent_name || d.data.area || d.data.value || d.data.consequent_name_1 || d.data.consequent_name_2);
+
+            // Update links to use adjusted coordinates for children of antecedent_name
+            links.attr("d", d => {
+                // Get adjusted source and target coordinates
+                const sourceCoords = nodeCoords[d.source.data.antecedent_name || d.source.data.area] || polarToCartesian(d.source.x, d.source.y);
+                const targetCoords = polarToCartesian(d.target.x, d.target.y);
+
+                // Calculate adjusted target coordinates for links
+                const rank = d.target.data.rank || 3; // Default rank is 3
+                const lengthFactor = rank / 3; // Factor for adjusting length
+                const dx = targetCoords.x - sourceCoords.x;
+                const dy = targetCoords.y - sourceCoords.y;
+
+                // Adjust target coordinates based on the rank
+                const adjustedTargetCoords = {
+                    x: sourceCoords.x + dx * lengthFactor,
+                    y: sourceCoords.y + dy * lengthFactor
+                };
+
+                // Construct path using adjusted coordinates
+                return "M" + sourceCoords.x + "," + sourceCoords.y +
+                    "L" + adjustedTargetCoords.x + "," + adjustedTargetCoords.y;
+            });
 
         });
 
