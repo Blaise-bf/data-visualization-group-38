@@ -101,6 +101,22 @@
 
                     return "M" + adjustedSourceCoords.x + "," + adjustedSourceCoords.y +
                         "L" + adjustedTargetCoords.x + "," + adjustedTargetCoords.y;
+                })
+                .style("stroke", d => {
+                    // Check if the source or target node is an antecedent_name with rank 3
+                    if ((d.source.data.antecedent_name && d.source.data.rank === 3) ||
+                        (d.target.data.antecedent_name && d.target.data.rank === 3)) {
+                        return "red"; // Set the color to red
+                    }
+                    if ((d.source.data.antecedent_name && d.source.data.rank === 2) ||
+                        (d.target.data.antecedent_name && d.target.data.rank === 2)) {
+                        return "green"; // Set the color to red
+                    } if ((d.source.data.antecedent_name && d.source.data.rank === 1) ||
+                        (d.target.data.antecedent_name && d.target.data.rank === 1)) {
+                        return "blue"; // Set the color to red
+                    } else {
+                        return "black"; // Default color
+                    }
                 });
 
             // Render nodes
@@ -117,12 +133,34 @@
                         coords = polarToCartesian(d.x, d.y);
                     }
                     return `translate(${coords.x},${coords.y})`;
-                });
+                })
+
             nodes.append("circle")
                 .attr("r", 5)
-                .style("fill", "#fff")
-                .style("stroke", "steelblue")
-                .style("stroke-width", "3px");
+                .style("fill", d => {
+                    // Color nodes of rank 3 and those connected to nodes of rank 3 red
+                    if (d.data.rank === 3 || (d.parent && d.parent.data.rank === 3)) {
+                        return "red";
+                    } if (d.data.rank === 2 || (d.parent && d.parent.data.rank === 2)) {
+                        return "green";
+                    } if (d.data.rank === 1 || (d.parent && d.parent.data.rank === 1)) {
+                        return "blue";
+                    } else {
+                        return "black";
+                    }
+                })
+                .style("stroke", d => {
+                    // Color nodes of rank 3 and those connected to nodes of rank 3 red
+                    if (d.data.rank === 3 || (d.parent && d.parent.data.rank === 3)) {
+                        return "red";
+                    } if (d.data.rank === 2 || (d.parent && d.parent.data.rank === 2)) {
+                        return "green";
+                    } if (d.data.rank === 1 || (d.parent && d.parent.data.rank === 1)) {
+                        return "blue";
+                    } else {
+                        return "black";
+                    }
+                })
 
             nodes.append("text")
                 .attr("dy", "0.31em")
@@ -147,7 +185,6 @@
                     x: sourceCoords.x + dx * lengthFactor,
                     y: sourceCoords.y + dy * lengthFactor
                 };
-
                 return "M" + sourceCoords.x + "," + sourceCoords.y +
                     "L" + adjustedTargetCoords.x + "," + adjustedTargetCoords.y;
             });
