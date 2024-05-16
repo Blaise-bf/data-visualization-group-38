@@ -3,7 +3,7 @@ const output = document.getElementById('updates');
 const dataFrequencySelector = document.getElementById('data-frequency');
 const regionSelector = document.getElementById("region")
 const propotionSelector = document.getElementById('absolute_vals');
-console.log(propotionSelector.checked)
+// console.log(propotionSelector.checked)
 
 output.innerHTML = `Displaying ${dataFrequencySelector.value} trend for the year ${slider.value}`; // Display the default slider value
 
@@ -14,16 +14,16 @@ function loadData() {
     const useProportions = document.getElementById('absolute_vals').checked;
     
     dataSource = frequency === 'weekly' ? 'trend_weekly.json' : 'trend_monthly.json';
-    console.log(`year ${year}, frequency ${frequency} , region ${region} proportion: ${useProportions}`)
+    // console.log(`year ${year}, frequency ${frequency} , region ${region} proportion: ${useProportions}`)
 
     d3.json(dataSource).then(function(data) {
         
         const filteredData = data.filter(d => d.year === year);
         const regionData = filteredData.filter(d => d.area === region)
         const uniqueTypes = Array.from(d3.group(filteredData, d => d.type).keys());
-        console.log(regionData);
+        // console.log(regionData);
 
-        console.log(uniqueTypes);
+        // console.log(uniqueTypes);
         drawCharts(regionData, year, frequency, uniqueTypes, useProportions);
     });
 }
@@ -55,7 +55,7 @@ function getData() {
     // Correct assignment of dataSource for both scenarios
     dataSource = frequency === 'weekly' ? 'trend_weekly.json' : 'trend_monthly.json';
     d3.json(dataSource).then(function(data) {
-        console.log("Using dataSource:", dataSource);
+        // console.log("Using dataSource:", dataSource);
         let filteredData = data.filter(d => d.year === year);
         filteredData = data.filter(d => d.area === region);
 
@@ -63,8 +63,8 @@ function getData() {
         // Simplify the extraction of unique types using new Set and map
         const uniqueTypes = Array.from(new Set(filteredData.map(d => d.type)));
 
-        console.log("Filtered Data:", filteredData);
-        console.log("Unique Types:", uniqueTypes);
+        // console.log("Filtered Data:", filteredData);
+        // console.log("Unique Types:", uniqueTypes);
         drawCharts(filteredData, year, frequency, uniqueTypes, useProportions);
     }).catch(error => {
         console.error('Error loading or processing data:', error);

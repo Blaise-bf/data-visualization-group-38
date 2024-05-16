@@ -1,4 +1,8 @@
 const slider = document.getElementById('year');
+const details = document.getElementById('select-details');
+
+const selcetDetail = details.value;
+console.log(selcetDetail);
 
 slider.addEventListener('input', function() {
     d3.json("delays.json").then(function (df) {
@@ -8,7 +12,33 @@ slider.addEventListener('input', function() {
     }).catch(console.error);
 });
 
+details.addEventListener('input', loadData);
 
+
+function loadData() {
+
+    const updateDetail = details.value;
+
+    dataSource = updateDetail === 'Type' ? 'product_type_delay.json' :
+             updateDetail === 'region' ? 'region_delay.json' :
+             'brand_name_delay.json';
+
+        slider.addEventListener('input', function() {
+        d3.json(dataSource).then(function (df) {
+            let year = parseInt(slider.value);
+            let filteredData = df.filter(d => parseInt(d.year) === year);
+            drawCharts(filteredData);
+
+            console.log(filteredData);
+        }).catch(console.error);
+    });
+            
+
+    console.log(dataSource);
+  
+};
+
+loadData();
 
    
     // const frequency = dataFrequencySelector.value;

@@ -1,0 +1,2162 @@
+[
+  {
+    "type": "Arcantic",
+    "month_name": "Jan",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jan",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jan",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jan",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jan",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Feb",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Feb",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Feb",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Feb",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Feb",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Mar",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Mar",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Mar",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Mar",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Mar",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Apr",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Apr",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Apr",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Apr",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Apr",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "May",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "May",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "May",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "May",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "May",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jun",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jun",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jun",
+    "year": 2021,
+    "delay": 70
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jun",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jun",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jul",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jul",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jul",
+    "year": 2021,
+    "delay": 55
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jul",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Jul",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Aug",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Aug",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Aug",
+    "year": 2021,
+    "delay": 41
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Aug",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Aug",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Sep",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Sep",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Sep",
+    "year": 2021,
+    "delay": 27
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Sep",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Sep",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Oct",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Oct",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Oct",
+    "year": 2021,
+    "delay": 14
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Oct",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Oct",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Nov",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Nov",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Nov",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Nov",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Nov",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Dec",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Dec",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Dec",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Dec",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Arcantic",
+    "month_name": "Dec",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jan",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jan",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jan",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jan",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jan",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Feb",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Feb",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Feb",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Feb",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Feb",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Mar",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Mar",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Mar",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Mar",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Mar",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Apr",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Apr",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Apr",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Apr",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Apr",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "May",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "May",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "May",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "May",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "May",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jun",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jun",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jun",
+    "year": 2021,
+    "delay": 68
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jun",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jun",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jul",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jul",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jul",
+    "year": 2021,
+    "delay": 55
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jul",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Jul",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Aug",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Aug",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Aug",
+    "year": 2021,
+    "delay": 40
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Aug",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Aug",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Sep",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Sep",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Sep",
+    "year": 2021,
+    "delay": 28
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Sep",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Sep",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Oct",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Oct",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Oct",
+    "year": 2021,
+    "delay": 14
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Oct",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Oct",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Nov",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Nov",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Nov",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Nov",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Nov",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Dec",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Dec",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Dec",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Dec",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Borderlands",
+    "month_name": "Dec",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jan",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jan",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jan",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jan",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jan",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Feb",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Feb",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Feb",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Feb",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Feb",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Mar",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Mar",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Mar",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Mar",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Mar",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Apr",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Apr",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Apr",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Apr",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Apr",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "May",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "May",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "May",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "May",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "May",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jun",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jun",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jun",
+    "year": 2021,
+    "delay": 69
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jun",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jun",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jul",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jul",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jul",
+    "year": 2021,
+    "delay": 56
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jul",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Jul",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Aug",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Aug",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Aug",
+    "year": 2021,
+    "delay": 40
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Aug",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Aug",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Sep",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Sep",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Sep",
+    "year": 2021,
+    "delay": 28
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Sep",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Sep",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Oct",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Oct",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Oct",
+    "year": 2021,
+    "delay": 14
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Oct",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Oct",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Nov",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Nov",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Nov",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Nov",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Nov",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Dec",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Dec",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Dec",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Dec",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Mythal",
+    "month_name": "Dec",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jan",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jan",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jan",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jan",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jan",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Feb",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Feb",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Feb",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Feb",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Feb",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Mar",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Mar",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Mar",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Mar",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Mar",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Apr",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Apr",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Apr",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Apr",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Apr",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "May",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "May",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "May",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "May",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "May",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jun",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jun",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jun",
+    "year": 2021,
+    "delay": 65
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jun",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jun",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jul",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jul",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jul",
+    "year": 2021,
+    "delay": 55
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jul",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Jul",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Aug",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Aug",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Aug",
+    "year": 2021,
+    "delay": 42
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Aug",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Aug",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Sep",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Sep",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Sep",
+    "year": 2021,
+    "delay": 28
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Sep",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Sep",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Oct",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Oct",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Oct",
+    "year": 2021,
+    "delay": 14
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Oct",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Oct",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Nov",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Nov",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Nov",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Nov",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Nov",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Dec",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Dec",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Dec",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Dec",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Red curtain",
+    "month_name": "Dec",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jan",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jan",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jan",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jan",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jan",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Feb",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Feb",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Feb",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Feb",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Feb",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Mar",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Mar",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Mar",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Mar",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Mar",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Apr",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Apr",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Apr",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Apr",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Apr",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "May",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "May",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "May",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "May",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "May",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jun",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jun",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jun",
+    "year": 2021,
+    "delay": 144
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jun",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jun",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jul",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jul",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jul",
+    "year": 2021,
+    "delay": 113
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jul",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Jul",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Aug",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Aug",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Aug",
+    "year": 2021,
+    "delay": 82
+  },
+  {
+    "type": "Sable",
+    "month_name": "Aug",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Aug",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Sep",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Sep",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Sep",
+    "year": 2021,
+    "delay": 52
+  },
+  {
+    "type": "Sable",
+    "month_name": "Sep",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Sep",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Oct",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Oct",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Oct",
+    "year": 2021,
+    "delay": 21
+  },
+  {
+    "type": "Sable",
+    "month_name": "Oct",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Oct",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Nov",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Nov",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Nov",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Nov",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Nov",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Dec",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Dec",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Dec",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Dec",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "Sable",
+    "month_name": "Dec",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jan",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jan",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jan",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jan",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jan",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Feb",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Feb",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Feb",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Feb",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Feb",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Mar",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Mar",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Mar",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Mar",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Mar",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Apr",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Apr",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Apr",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Apr",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Apr",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "May",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "May",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "May",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "May",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "May",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jun",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jun",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jun",
+    "year": 2021,
+    "delay": 68
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jun",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jun",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jul",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jul",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jul",
+    "year": 2021,
+    "delay": 56
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jul",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Jul",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Aug",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Aug",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Aug",
+    "year": 2021,
+    "delay": 40
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Aug",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Aug",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Sep",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Sep",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Sep",
+    "year": 2021,
+    "delay": 27
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Sep",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Sep",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Oct",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Oct",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Oct",
+    "year": 2021,
+    "delay": 14
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Oct",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Oct",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Nov",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Nov",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Nov",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Nov",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Nov",
+    "year": 2023,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Dec",
+    "year": 2019,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Dec",
+    "year": 2020,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Dec",
+    "year": 2021,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Dec",
+    "year": 2022,
+    "delay": 7
+  },
+  {
+    "type": "U.n.n.",
+    "month_name": "Dec",
+    "year": 2023,
+    "delay": 7
+  }
+]

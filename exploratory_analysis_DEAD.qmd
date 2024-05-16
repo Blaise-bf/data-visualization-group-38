@@ -362,12 +362,12 @@ df_chart1 |>
   summarize(total = sum(revenue), .groups = "drop") |> 
   mutate(area = "Overall")
     
-  )
+  ) -> total_revenue_business_unit
   
 
 
-all_revenue_week <- bind_rows(proportion_revenue_week, proportion_revenue_week_area)
-  write(toJSON(all_revenue_week, pretty = TRUE), "trend_weekly.json")
+all_revenue_week <- bind_rows(proportion_revenue_week, proportion_revenue_week_area) |> inner_join(total_revenue_business_unit, join_by(business_unit, year, area))
+  write(toJSON(all_revenue_week, pretty = TRUE), "trends/trend_weekly.json")
 ```
 
 ```{r}
@@ -391,16 +391,16 @@ proportion_revenue_month <- df_chart1 %>%
   mutate(area = "Overall")
 
 
-all_revenue_month <- bind_rows(proportion_revenue_month, proportion_revenue_month_area)
-write(toJSON(all_revenue_month, pretty = TRUE), "trend_monthly.json")
+all_revenue_month <- bind_rows(proportion_revenue_month, proportion_revenue_month_area) |> inner_join(total_revenue_business_unit, join_by(business_unit, year, area))
+write(toJSON(all_revenue_month, pretty = TRUE), "trends/trend_monthly.json")
 ```
 
 ```{r}
-
+all_revenue_month
 ```
 
 ```{r}
-
+all_revenue_week
 ```
 
 ```{r}
@@ -506,14 +506,44 @@ write(json_regional_revenue, "regional_revenue.json")
 df_delays <- df_join |> 
   group_by(year, type, month_name) |> 
   summarize(delay = parse_number(as.character(round(mean(delay, na.rm = TRUE)))), .groups = "drop") 
+  
   # filter(year == 2020) |> 
   # rename(type = brand_name)
   
-df_delays
+
+
+df_join |> 
+  group_by(region, month_name, year) |>
+  summarize(delay = parse_number(as.character(round(mean(delay, na.rm = TRUE)))), .groups = "drop") |> 
+  rename(
+    type = region
+  ) -> region_delays
+
+
+
+region_delays |> 
+  toJSON( pretty = TRUE) |> 
+  write('delay/region_delay.json')
+
+# Write the delays fro product types as json
+df_delays |> 
+  toJSON(pretty = TRUE) |> 
+  write('delay/product_type_delay.json')
+  
 ```
 
 ```{r}
-write(toJSON(df_delays, pretty = TRUE), "delays.json")
+df_join |> 
+  group_by(brand_name, month_name, year) |> 
+  summarize(delay = parse_number(as.character(round(mean(delay, na.rm = TRUE)))), .groups = "drop"
+            )|> 
+  rename(type = brand_name) |> 
+   toJSON( pretty = TRUE) |> 
+  write('delay/brand_name_delay.json')
+```
+
+```{r}
+write(toJSON(region_delays, pretty = TRUE), "delay/delays.json")
 ```
 
 ```{r}
