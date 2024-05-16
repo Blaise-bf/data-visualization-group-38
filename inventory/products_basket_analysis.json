@@ -9,8 +9,12 @@
           "rank": 3.0,
           "children": [
             {
-              "value": 179359,
-              "consequent_name_1": "Quarterstaff  (U.N.N.)",
+              "value": 179359
+            },
+            {
+              "consequent_name_1": "Quarterstaff  (U.N.N.)"
+            },
+            {
               "consequent_name_2": "Ironfang (Red Curtain)"
             }
           ]
@@ -20,8 +24,12 @@
           "rank": 2.0,
           "children": [
             {
-              "value": 145652,
-              "consequent_name_1": "Hazirawn (Arcantic)",
+              "value": 145652
+            },
+            {
+              "consequent_name_1": "Hazirawn (Arcantic)"
+            },
+            {
               "consequent_name_2": "Staff of Fire (Sable)"
             }
           ]
@@ -31,8 +39,12 @@
           "rank": 1.0,
           "children": [
             {
-              "value": 142198,
-              "consequent_name_1": "Quarterstaff  (U.N.N.)",
+              "value": 142198
+            },
+            {
+              "consequent_name_1": "Quarterstaff  (U.N.N.)"
+            },
+            {
               "consequent_name_2": "Ironfang (Sable)"
             }
           ]
@@ -47,8 +59,12 @@
           "rank": 3.0,
           "children": [
             {
-              "value": 207805,
-              "consequent_name_1": "Ironfang (Red Curtain)",
+              "value": 207805
+            },
+            {
+              "consequent_name_1": "Ironfang (Red Curtain)"
+            },
+            {
               "consequent_name_2": "Green Dragon Mask (U.N.N.)"
             }
           ]
@@ -58,8 +74,12 @@
           "rank": 2.0,
           "children": [
             {
-              "value": 204666,
-              "consequent_name_1": "Ironfang (Red Curtain)",
+              "value": 204666
+            },
+            {
+              "consequent_name_1": "Ironfang (Red Curtain)"
+            },
+            {
               "consequent_name_2": "Quarterstaff  (Red Curtain)"
             }
           ]
@@ -69,8 +89,12 @@
           "rank": 1.0,
           "children": [
             {
-              "value": 199899,
-              "consequent_name_1": "Morningstar  (Borderlands)",
+              "value": 199899
+            },
+            {
+              "consequent_name_1": "Morningstar  (Borderlands)"
+            },
+            {
               "consequent_name_2": "Morningstar  (U.N.N.)"
             }
           ]
@@ -85,8 +109,12 @@
           "rank": 3.0,
           "children": [
             {
-              "value": 251903,
-              "consequent_name_1": "Shield of Missile Attraction (Arcantic)",
+              "value": 251903
+            },
+            {
+              "consequent_name_1": "Shield of Missile Attraction (Arcantic)"
+            },
+            {
               "consequent_name_2": "Adamantine Armour (Mythal)"
             }
           ]
@@ -96,8 +124,12 @@
           "rank": 2.0,
           "children": [
             {
-              "value": 223095,
-              "consequent_name_1": "Adamantine Armour (Mythal)",
+              "value": 223095
+            },
+            {
+              "consequent_name_1": "Adamantine Armour (Mythal)"
+            },
+            {
               "consequent_name_2": "Azuredge (Arcantic)"
             }
           ]
@@ -107,8 +139,12 @@
           "rank": 1.0,
           "children": [
             {
-              "value": 213750,
-              "consequent_name_1": "Shield of Missile Attraction (Red Curtain)",
+              "value": 213750
+            },
+            {
+              "consequent_name_1": "Shield of Missile Attraction (Red Curtain)"
+            },
+            {
               "consequent_name_2": "Adamantine Armour (Mythal)"
             }
           ]
@@ -123,8 +159,12 @@
           "rank": 3.0,
           "children": [
             {
-              "value": 31570,
-              "consequent_name_1": "Half plate  (U.N.N.)",
+              "value": 31570
+            },
+            {
+              "consequent_nme_1": "Half plate  (U.N.N.)"
+            },
+            {
               "consequent_name_2": "Spear (Borderlands)"
             }
           ]
@@ -134,8 +174,12 @@
           "rank": 2.0,
           "children": [
             {
-              "value": 30625,
-              "consequent_name_1": "Half plate  (U.N.N.)",
+              "value": 30625
+            },
+            {
+              "consequent_name_1": "Half plate  (U.N.N.)"
+            },
+            {
               "consequent_name_2": "Spear (U.N.N.)"
             }
           ]
@@ -145,8 +189,12 @@
           "rank": 1.0,
           "children": [
             {
-              "value": 24442,
-              "consequent_name_1": "Spear (Borderlands)",
+              "value": 24442
+            },
+            {
+              "consequent_name_1": "Spear (Borderlands)"
+            },
+            {
               "consequent_name_2": "Armour of Vulnerability (Sable)"
             }
           ]
@@ -161,8 +209,12 @@
           "rank": 3.0,
           "children": [
             {
-              "value": 60932,
-              "consequent_name_1": "Greatsword  (Borderlands)",
+              "value": 60932
+            },
+            {
+              "consequent_name_1": "Greatsword  (Borderlands)"
+            },
+            {
               "consequent_name_2": "Arcane Firearm (Arcantic)"
             }
           ]
@@ -172,8 +224,12 @@
           "rank": 2.0,
           "children": [
             {
-              "value": 58671,
-              "consequent_name_1": "Splint mail (Borderlands)",
+              "value": 58671
+            },
+            {
+              "consequent_name_1": "Splint mail (Borderlands)"
+            },
+            {
               "consequent_name_2": "Splint mail (U.N.N.)"
             }
           ]
@@ -183,8 +239,12 @@
           "rank": 1.0,
           "children": [
             {
-              "value": 54489,
-              "consequent_name_1": "Blackstaff (Mythal)",
+              "value": 54489
+            },
+            {
+              "consequent_name_1": "Blackstaff (Mythal)"
+            },
+            {
               "consequent_name_2": "Staff of Fire (Sable)"
             }
           ]

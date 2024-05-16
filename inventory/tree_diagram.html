@@ -42,14 +42,6 @@
             // Generate tree nodes and links
             const treeData = radialLayout(hierarchyRoot);
 
-            treeData.each(node => {
-                if (node.children) {
-                    node.children.forEach(child => {
-                        child.parent = node;
-                    });
-                }
-            });
-
             // Adjust node positioning
             const svg = d3.select("#tree-container")
                 .attr("width", width)
@@ -90,6 +82,7 @@
                 .attr("dominant-baseline", "middle") // Center text vertically
                 .attr("transform", d => d.x >= Math.PI ? "rotate(360)" : null)
                 .text(d => d.data.antecedent_name || d.data.area || d.data.value || d.data.consequent_name_1 || d.data.consequent_name_2);
+
         });
 
         // Function to convert polar coordinates to Cartesian coordinates
