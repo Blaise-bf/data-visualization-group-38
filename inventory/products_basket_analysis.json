@@ -1,0 +1,255 @@
+{
+  "area": "World",
+  "children": [
+    {
+      "area": "East",
+      "children": [
+        {
+          "antecedent_name": "Quarterstaff  (Borderlands)",
+          "rank": 3.0,
+          "children": [
+            {
+              "value": 179359
+            },
+            {
+              "consequent_name_1": "Quarterstaff  (U.N.N.)"
+            },
+            {
+              "consequent_name_2": "Ironfang (Red Curtain)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Staff of Fire (Borderlands)",
+          "rank": 2.0,
+          "children": [
+            {
+              "value": 145652
+            },
+            {
+              "consequent_name_1": "Hazirawn (Arcantic)"
+            },
+            {
+              "consequent_name_2": "Staff of Fire (Sable)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Quarterstaff  (Red Curtain)",
+          "rank": 1.0,
+          "children": [
+            {
+              "value": 142198
+            },
+            {
+              "consequent_name_1": "Quarterstaff  (U.N.N.)"
+            },
+            {
+              "consequent_name_2": "Ironfang (Sable)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "North",
+      "children": [
+        {
+          "antecedent_name": "Ironfang (Sable)",
+          "rank": 3.0,
+          "children": [
+            {
+              "value": 207805
+            },
+            {
+              "consequent_name_1": "Ironfang (Red Curtain)"
+            },
+            {
+              "consequent_name_2": "Green Dragon Mask (U.N.N.)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Quarterstaff  (Borderlands)",
+          "rank": 2.0,
+          "children": [
+            {
+              "value": 204666
+            },
+            {
+              "consequent_name_1": "Ironfang (Red Curtain)"
+            },
+            {
+              "consequent_name_2": "Quarterstaff  (Red Curtain)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Morningstar  (Red Curtain)",
+          "rank": 1.0,
+          "children": [
+            {
+              "value": 199899
+            },
+            {
+              "consequent_name_1": "Morningstar  (Borderlands)"
+            },
+            {
+              "consequent_name_2": "Morningstar  (U.N.N.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "South",
+      "children": [
+        {
+          "antecedent_name": "Living Heavy Armour (Mythal)",
+          "rank": 3.0,
+          "children": [
+            {
+              "value": 251903
+            },
+            {
+              "consequent_name_1": "Shield of Missile Attraction (Arcantic)"
+            },
+            {
+              "consequent_name_2": "Adamantine Armour (Mythal)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Adamantine Armour (Red Curtain)",
+          "rank": 2.0,
+          "children": [
+            {
+              "value": 223095
+            },
+            {
+              "consequent_name_1": "Adamantine Armour (Mythal)"
+            },
+            {
+              "consequent_name_2": "Azuredge (Arcantic)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Veterans Cane (Sable)",
+          "rank": 1.0,
+          "children": [
+            {
+              "value": 213750
+            },
+            {
+              "consequent_name_1": "Shield of Missile Attraction (Red Curtain)"
+            },
+            {
+              "consequent_name_2": "Adamantine Armour (Mythal)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "Underdark",
+      "children": [
+        {
+          "antecedent_name": "Tentacle Rod (Mythal)",
+          "rank": 3.0,
+          "children": [
+            {
+              "value": 31570
+            },
+            {
+              "consequent_nme_1": "Half plate  (U.N.N.)"
+            },
+            {
+              "consequent_name_2": "Spear (Borderlands)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Half plate  (Red Curtain)",
+          "rank": 2.0,
+          "children": [
+            {
+              "value": 30625
+            },
+            {
+              "consequent_name_1": "Half plate  (U.N.N.)"
+            },
+            {
+              "consequent_name_2": "Spear (U.N.N.)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Armour of Vulnerability (Mythal)",
+          "rank": 1.0,
+          "children": [
+            {
+              "value": 24442
+            },
+            {
+              "consequent_name_1": "Spear (Borderlands)"
+            },
+            {
+              "consequent_name_2": "Armour of Vulnerability (Sable)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "West",
+      "children": [
+        {
+          "antecedent_name": "Studded leather armour (U.N.N.)",
+          "rank": 3.0,
+          "children": [
+            {
+              "value": 60932
+            },
+            {
+              "consequent_name_1": "Greatsword  (Borderlands)"
+            },
+            {
+              "consequent_name_2": "Arcane Firearm (Arcantic)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Splint mail (Red Curtain)",
+          "rank": 2.0,
+          "children": [
+            {
+              "value": 58671
+            },
+            {
+              "consequent_name_1": "Splint mail (Borderlands)"
+            },
+            {
+              "consequent_name_2": "Splint mail (U.N.N.)"
+            }
+          ]
+        },
+        {
+          "antecedent_name": "Battleaxe  (U.N.N.)",
+          "rank": 1.0,
+          "children": [
+            {
+              "value": 54489
+            },
+            {
+              "consequent_name_1": "Blackstaff (Mythal)"
+            },
+            {
+              "consequent_name_2": "Staff of Fire (Sable)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
