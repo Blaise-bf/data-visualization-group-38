@@ -4,51 +4,44 @@ const details = document.getElementById('select-details');
 const selcetDetail = details.value;
 console.log(selcetDetail);
 
-slider.addEventListener('input', function() {
-    d3.json("delays.json").then(function (df) {
-        let year = parseInt(slider.value);
-        let filteredData = df.filter(d => parseInt(d.year) === year);
-        drawCharts(filteredData);
-    }).catch(console.error);
-});
 
+
+// add event listeners
+           
 details.addEventListener('input', loadData);
+slider.addEventListener('input', loadData)
 
+const textDisplay = document.getElementById('info-display');
+console.log(textDisplay)
+
+updateDisplay = details.value === 'Type' ? 'product types' :
+             details.value === 'region' ? 'region' :
+             'brand name';
+textDisplay.innerHTML = `Displaying average monthly delay time for different ${details.value} for ${slider.value}`;
 
 function loadData() {
-
+    const year = parseInt(slider.value);
     const updateDetail = details.value;
-
     dataSource = updateDetail === 'Type' ? 'product_type_delay.json' :
              updateDetail === 'region' ? 'region_delay.json' :
              'brand_name_delay.json';
 
-        slider.addEventListener('input', function() {
         d3.json(dataSource).then(function (df) {
-            let year = parseInt(slider.value);
+            
             let filteredData = df.filter(d => parseInt(d.year) === year);
             drawCharts(filteredData);
 
-            console.log(filteredData);
+            // console.log(filteredData);
         }).catch(console.error);
-    });
+    
             
 
-    console.log(dataSource);
+    // console.log(dataSource);
   
 };
 
 loadData();
 
-   
-    // const frequency = dataFrequencySelector.value;
-    // const dataSource = frequency === 'weekly' ? 'weekly_revenue.json' : 'monthly_revenue.json';
-    d3.json("delays.json").then(function (df) {
-        let initialYear = parseInt(slider.value);
-        let initialData = df.filter(d => parseInt(d.year) === initialYear);
-        drawCharts(initialData);
-    }).catch(console.error);
-    
 
 
 function drawDelayPattern(svg, data) {
@@ -83,25 +76,7 @@ function drawDelayPattern(svg, data) {
         svg.select('.x-axis').call(d3.axisBottom(xScale));
         svg.select('.y-axis').call(d3.axisLeft(yScale));
     
-        // Draw or update the horizontal lines
-        // const lines = svg.selectAll(".type-line")
-        //     .data(data.map(d => d.type));
-    
-        // lines.enter()
-        //     .append("line")
-        //     .attr("class", "type-line")
-        //     .merge(lines)
-        //     .attr("x1", 0)
-        //     .attr("x2", width)
-        //     .attr("y1", d => yScale(d))
-        //     .attr("y2", d => yScale(d))
-        //     .attr("stroke", "teal")
-        //     .attr("stroke-width", ".1");
-    
-        // lines.exit().remove();
-    // const sizeScale = d3.scaleSqrt()
-    //     .domain([0, d3.max(data, d => d3.max(d.data, dd => dd.delay))])
-    //     .range([0, 20]);
+       
     const legendPadding = 37;  // Space between the main plot and the legend
 
 
@@ -247,7 +222,6 @@ const margin = { top: 20, right: 200, bottom: 50, left: 120 };
     const chartContainer = d3.select("#chart");
     chartContainer.html(''); // Clear previous charts
 
-    // Append a div for each business unit chart to manage with flexbox
    
 
 const container = chartContainer.append("div")
