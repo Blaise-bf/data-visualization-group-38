@@ -202,5 +202,3 @@ function calculateOrders(source, target) {
     }).map(d => d.id)]
   ]);
 }
-
-// Example usage assuming source and target are defined
